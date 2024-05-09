@@ -1,0 +1,7742 @@
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+   margin: 0;
+   padding: 0;
+ }
+
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+   display: block;
+ }
+
+ body {
+   line-height: 1;
+ }
+
+ ol,
+ ul {
+   list-style: none;
+ }
+
+ blockquote,
+ q {
+   quotes: none;
+ }
+
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+   content: none;
+ }
+
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+ * {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+
+ html {
+   width: 100%;
+   height: 100%;
+ }
+
+ body {
+   font-family: "Signika Negative", sans-serif;
+   line-height: 1.3;
+   color: #fff;
+   background-color: #071829;
+   position: relative;
+   -webkit-font-smoothing: antialiased;
+   -ms-overflow-style: none
+ }
+
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ .sidebar h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-family: "Gotham-Bold", sans-serif;
+   line-height: 120%;
+ }
+
+ h1,
+ h1 a,
+ h1 a:hover,
+ h1 a:visited,
+ h2,
+ h2 a,
+ h2 a:hover,
+ h2 a:visited,
+ h3,
+ h3 a,
+ h3 a:hover,
+ h3 a:visited,
+ h4,
+ h4 a,
+ h4 a:hover,
+ h4 a:visited,
+ h5,
+ h5 a,
+ h5 a:hover,
+ h5 a:visited,
+ h6,
+ h6 a,
+ h6 a:hover,
+ h6 a:visited,
+ .sidebar h1,
+ .sidebar h1 a,
+ .sidebar h1 a:hover,
+ .sidebar h1 a:visited,
+ h2,
+ h2 a,
+ h2 a:hover,
+ h2 a:visited,
+ h3,
+ h3 a,
+ h3 a:hover,
+ h3 a:visited,
+ h4,
+ h4 a,
+ h4 a:hover,
+ h4 a:visited,
+ h5,
+ h5 a,
+ h5 a:hover,
+ h5 a:visited,
+ h6,
+ h6 a,
+ h6 a:hover,
+ h6 a:visited {
+   color: #fff;
+ }
+
+ h1 {
+   font-size: 36px;
+ }
+
+ h2 {
+   font-size: 32px;
+ }
+
+ h3 {
+   font-size: 26px;
+ }
+
+ h4 {
+   font-size: 20px;
+ }
+
+ h5 {
+   font-size: 18px;
+ }
+
+ h6 {
+   font-size: 16px;
+ }
+
+ h1 {
+   margin-bottom: 30px;
+ }
+
+ h2,
+ h3,
+ h4 {
+   margin-bottom: 25px;
+ }
+
+ h5,
+ h6 {
+   margin-bottom: 20px;
+ }
+
+ p {
+   margin-bottom: 25px;
+ }
+
+ a,
+ a:hover,
+ a:visited {
+   text-decoration: none;
+   color: #fff;
+ }
+
+ a:focus {
+   outline: none;
+ }
+
+ a>img {
+   border: none;
+   /* IE */
+ }
+
+ b,
+ strong {
+   font-weight: bold;
+ }
+
+ i,
+ em {
+   font-style: italic;
+   font-weight: lighter;
+ }
+
+ img {
+   max-width: 100%;
+   height: auto;
+   vertical-align: bottom;
+ }
+
+ input,
+ input:focus,
+ textarea,
+ textarea:focus {
+   outline: none;
+ }
+
+ select {
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   -webkit-appearance: none;
+   -ms-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+ }
+
+ *:focus {
+   outline: none;
+ }
+
+ ul,
+ li,
+ div,
+ aside,
+ span,
+ table,
+ thead,
+ tbody,
+ tfoot,
+ tr,
+ td,
+ th,
+ form,
+ input,
+ p,
+ article {
+   border-color: inherit;
+   color: inherit;
+ }
+
+ ins {
+   text-decoration: none;
+ }
+
+ address {
+   font-style: italic;
+ }
+
+ pre {
+   white-space: pre-wrap;
+   /* css-3 */
+   white-space: -moz-pre-wrap;
+   /* Mozilla, since 1999 */
+   white-space: -pre-wrap;
+   /* Opera 4-6 */
+   white-space: -o-pre-wrap;
+   /* Opera 7 */
+   word-wrap: break-word;
+   /* Internet Explorer 5.5+ */
+   background-color: #F2F2F2;
+   font-family: monospace;
+   padding: 10px;
+ }
+
+ sub,
+ sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+ }
+
+ sup {
+   top: -0.5em;
+ }
+
+ sub {
+   bottom: -0.25em;
+ }
+
+ cite {
+   font-style: italic;
+ }
+
+ mark {
+   background-color: transparent;
+   color: inherit;
+ }
+
+ table {
+   border-collapse: separate;
+   border-spacing: 0;
+   table-layout: fixed;
+   width: 100%;
+ }
+
+ /* =Embeds
+----------------------------------------------- */
+ embed,
+ iframe,
+ object,
+ video {
+   max-width: 100%;
+   vertical-align: bottom;
+ }
+
+ /* BEGIN: Global Styles */
+ .menu {
+   font-family: "FuturaNDJMedium", sans-serif;
+   text-transform: uppercase;
+ }
+
+ .label {
+   font-family: "FuturaNDJMedium", sans-serif !important;
+   text-transform: uppercase;
+ }
+
+ .n-icon {
+   display: inline-block;
+   width: 25px;
+   vertical-align: middle;
+ }
+
+ .n-icon svg {
+   max-width: 100%;
+   height: auto;
+   max-height: 100%;
+   display: block;
+ }
+
+ .n-icon svg,
+ .n-icon svg path,
+ .n-icon svg polygon {
+   fill: currentColor !important;
+ }
+
+ .submit-icon input[type="submit"] {
+   display: none;
+ }
+
+ /* END: Global Styles */
+ /* =Utils
+----------------------------------------------- */
+ .clearfix:after,
+ .grid-row:after {
+   content: " ";
+   display: table;
+   clear: both;
+ }
+
+ .social-share-buttons .ci-icon {
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+ }
+
+ .masonry-grid-sizer {
+   display: none;
+ }
+
+ .masonry-brick.animate,
+ .infinite-item.animate {
+   -webkit-transform: translateY(200px);
+   transform: translateY(200px);
+   -webkit-animation: moveUp 0.65s ease forwards;
+   animation: moveUp 0.65s ease forwards;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -ms-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   transition: all 0.3s;
+ }
+
+ @-webkit-keyframes moveUp {
+   100% {
+     -webkit-transform: translateY(0);
+     opacity: 1;
+   }
+ }
+
+ @keyframes moveUp {
+   100% {
+     -webkit-transform: translateY(0);
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
+
+ /* back to top link */
+ #top-link.active {
+   display: block;
+ }
+
+ #top-link {
+   display: none;
+   z-index: 999;
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   width: 61px;
+   height: 61px;
+ }
+
+ @font-face {
+   font-family: 'FuturaNDJMedium';
+   src: url("../font/futura-ndj-webfont.eot");
+   src: url("../font/futura-ndj-webfont.eot?#iefix") format("embedded-opentype"), url("../font/futura-ndj-webfont.woff") format("woff"), url("../font/futura-ndj-webfont.ttf") format("truetype"), url("../font/futura-ndj-webfont.svg#FuturaNDJMedium") format("svg");
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'Gotham-Bold';
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/Gotham-Bold.eot");
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/Gotham-Bold.woff") format("woff"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/Gotham-Bold.ttf") format("truetype");
+   font-weight: bold;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'Signika Negative';
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/SignikaNegative-Regular.eot");
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/SignikaNegative-Regular.eot?#iefix") format("embedded-opentype"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/SignikaNegative-Regular.woff") format("woff"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/SignikaNegative-Regular.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'Signika Negative Light';
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/SignikaNegative-Light.eot");
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/SignikaNegative-Light.eot?#iefix") format("embedded-opentype"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/SignikaNegative-Light.woff") format("woff"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/SignikaNegative-Light.ttf") format("truetype");
+   font-weight: 300;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'Merriweather Sans Italic';
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/MerriweatherSans-Italic.eot");
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/MerriweatherSans-Italic.eot?#iefix") format("embedded-opentype"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/MerriweatherSans-Italic.woff") format("woff"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/MerriweatherSans-Italic.ttf") format("truetype");
+   font-weight: normal;
+   font-style: italic;
+ }
+
+ @font-face {
+   font-family: 'Gotham-Medium';
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/Gotham-Medium.eot");
+   src: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/Gotham-Medium.woff") format("woff"), url("https://novakdjokovic.com/wp-content/themes/novak2/assets/fonts/Gotham-Medium.ttf") format("truetype");
+   font-weight: 500;
+   font-style: normal;
+ }
+
+ body:not(.home) #header__inner {
+   background-color: rgba(0, 165, 228, 0.1);
+ }
+
+ body:not(.home) #main {
+   background: #071829 url("../images/tennis-default-bg.png") center 0 repeat-x;
+   overflow: hidden;
+ }
+
+ .container {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1100px;
+ }
+
+ .grid-row {
+   margin-left: -5px;
+   margin-right: -5px;
+   color: #fff;
+ }
+
+ .grid-col {
+   padding-left: 5px;
+   padding-right: 5px;
+   float: left;
+ }
+
+ .grid-col-2,
+ .grid-col-3,
+ .grid-col-4,
+ .grid-col-5,
+ .grid-col-6,
+ .grid-col-7,
+ .grid-col-8,
+ .grid-col-9,
+ .grid-col-10,
+ .grid-col-12 {
+   float: left;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+
+ .grid-col-2 {
+   width: 16.66666667%;
+ }
+
+ .grid-col-3 {
+   width: 25%;
+ }
+
+ .grid-col-4 {
+   width: 33.33333333%;
+ }
+
+ .grid-col-5 {
+   width: 41.66666667%;
+ }
+
+ .grid-col-6 {
+   width: 50%;
+ }
+
+ .grid-col-7 {
+   width: 58.33333333%;
+ }
+
+ .grid-col-8 {
+   width: 66.66666667%;
+ }
+
+ .grid-col-9 {
+   width: 75%;
+ }
+
+ .grid-col-10 {
+   width: 83.33333333%;
+ }
+
+ .grid-col-12 {
+   width: 100%;
+ }
+
+ .grid-col-50 {
+   width: 545px;
+ }
+
+ .grid-col-medium {
+   width: 360px;
+ }
+
+ #header {
+   height: 90px;
+ }
+
+ #header__inner {
+   text-align: center;
+   position: relative;
+ }
+
+ #header__inner #header__inner--left {
+   position: absolute;
+   left: 30px;
+ }
+
+ #header__inner #header__inner--right {
+   position: absolute;
+   right: 20px;
+   padding-top: 30px;
+ }
+
+ /* BEGIN: Header Menu **************/
+ #header-menu {
+   font-size: 0;
+   display: flex;
+   justify-content: center;
+ }
+
+ #header-menu a,
+ #header-menu a:visited {
+   display: block;
+   height: 100%;
+   color: #fff;
+   opacity: 0.6;
+   -webkit-transition: opacity 0.2s;
+   -moz-transition: opacity 0.2s;
+   -ms-transition: opacity 0.2s;
+   -o-transition: opacity 0.2s;
+   transition: opacity 0.2s;
+ }
+
+ #header-menu li {
+   font-size: 14px;
+   padding-left: 10px;
+   padding-right: 10px;
+   display: inline-block;
+   text-transform: uppercase;
+   height: 90px;
+   line-height: 95px;
+ }
+
+ #header-menu li:not(.menu-logo):hover {
+   border-bottom: 4px solid #00b1d9;
+   background-color: rgba(0, 177, 217, 0.3);
+ }
+
+ #header-menu li:not(.menu-logo):hover a {
+   opacity: 1;
+ }
+
+ #header-menu .menu-logo {
+   margin-left: 20px;
+   margin-right: 20px;
+   width: 50px;
+   color: #fff;
+ }
+
+ #header-menu .menu-logo a {
+   opacity: 1;
+ }
+
+ #header-menu .menu-logo svg {
+   display: inline-block;
+   fill: #fff;
+   vertical-align: middle;
+ }
+
+ #header-menu .menu-logo img {
+   vertical-align: middle;
+ }
+
+ .news-page #header-menu li.menu-item-news,
+ #header-menu li.menu-item-news:hover {
+   border-bottom: 4px solid #c41424;
+   background-color: rgba(237, 28, 46, 0.3);
+ }
+
+ .news-page #header-menu li.menu-item-news a,
+ #header-menu li.menu-item-news:hover a {
+   opacity: 1;
+ }
+
+ .novak-page #header-menu li.menu-item-novak,
+ #header-menu li.menu-item-novak:hover {
+   border-bottom: 4px solid #00b1d9;
+   background-color: rgba(0, 177, 217, 0.3);
+ }
+
+ .novak-page #header-menu li.menu-item-novak a,
+ #header-menu li.menu-item-novak:hover a {
+   opacity: 1;
+ }
+
+ .nolefam-page #header-menu li.menu-item-nolefam,
+ #header-menu li.menu-item-nolefam:hover {
+   border-bottom: 4px solid #0d8eff;
+   background-color: rgba(13, 142, 255, 0.3);
+ }
+
+ .nolefam-page #header-menu li.menu-item-nolefam a,
+ #header-menu li.menu-item-nolefam:hover a {
+   opacity: 1;
+ }
+
+ .tour-page #header-menu li.menu-item-tour,
+ #header-menu li.menu-item-tour:hover {
+   border-bottom: 4px solid #00a5e4;
+   background-color: rgba(0, 165, 228, 0.3);
+ }
+
+ .tour-page #header-menu li.menu-item-tour a,
+ #header-menu li.menu-item-tour:hover a {
+   opacity: 1;
+ }
+
+ .photo-page #header-menu li.menu-item-photo,
+ #header-menu li.menu-item-photo:hover {
+   border-bottom: 4px solid #54cfff;
+   background-color: rgba(84, 207, 255, 0.3);
+ }
+
+ .photo-page #header-menu li.menu-item-photo a,
+ #header-menu li.menu-item-photo:hover a {
+   opacity: 1;
+ }
+
+ .video-page #header-menu li.menu-item-video,
+ #header-menu li.menu-item-video:hover {
+   border-bottom: 4px solid #255ade;
+   background-color: rgba(37, 90, 222, 0.3);
+ }
+
+ .video-page #header-menu li.menu-item-video a,
+ #header-menu li.menu-item-video:hover a {
+   opacity: 1;
+ }
+
+ .home #header-menu li:not(.menu-logo):hover {
+   border-bottom: none !important;
+   background-color: transparent !important;
+ }
+
+ /* END: Header Menu **************/
+ #header-social {
+   margin-top: 35px;
+ }
+
+ #header-social a {
+   display: inline-block;
+   text-align: center;
+   -webkit-transition: opacity 0.2s;
+   -moz-transition: opacity 0.2s;
+   -ms-transition: opacity 0.2s;
+   -o-transition: opacity 0.2s;
+   transition: opacity 0.2s;
+ }
+
+ #header-social a,
+ #header-social a:visited {
+   color: #bbbdbf !important;
+   opacity: 0.6;
+ }
+
+ #header-social a:hover {
+   opacity: 1;
+ }
+
+ #header-social a .n-icon {
+   width: 21px;
+   height: 21px;
+   margin-left: 2px;
+   margin-right: 2px;
+ }
+
+ #header-social a .n-icon-facebook {
+   margin-left: 0;
+   margin-right: 0;
+ }
+
+ #header-social a .n-icon-twitter {
+   margin-left: 0;
+ }
+
+ /* BEGIN: Header Search **************/
+ #header-search {
+   display: inline-block;
+ }
+
+ #searchForm {
+   position: relative;
+   color: #fff;
+ }
+
+ #searchForm #s {
+   height: 30px;
+   padding: 6px 30px 3px 5px;
+   color: #fff;
+   color: rgba(255, 255, 255, 0.6);
+   text-transform: uppercase;
+   font-family: 'FuturaNDJMedium';
+   border: none;
+   background-color: #fff;
+   background-color: rgba(84, 207, 255, 0.2);
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+ }
+
+ #searchForm #submitLabel {
+   position: absolute;
+   right: 2px;
+   top: 0;
+   width: 30px;
+   height: 30px;
+   color: rgba(255, 255, 255, 0.5);
+   background-color: transparent;
+   border: none;
+ }
+
+ #searchForm #submitLabel .n-icon {
+   width: 30px;
+ }
+
+ #searchForm #submitLabel:hover {
+   cursor: pointer;
+ }
+
+ #searchForm #submitLabel #searchSubmit {
+   display: none;
+ }
+
+ /* END: Header Search **************/
+ /* BEGIN: Header Lang switcher **************/
+ #header-lang {
+   margin-left: 13px;
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   float: right;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   border: 1px solid #fff;
+   border-color: rgba(255, 255, 255, 0.3);
+ }
+
+ #header-lang #lang-lnk {
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   text-indent: -999em;
+   opacity: 0.8;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+   background: url("../images/lang-sr.png") center center no-repeat;
+ }
+
+ #header-lang #lang-lnk:hover {
+   opacity: 1;
+ }
+
+ #header-lang #lang-lnk.lang-en {
+   background-image: url("../images/lang-en.png");
+ }
+
+ /* END: Header Lang switcher **************/
+ /* BEGIN: Footer Sponsors **************/
+ #footer-sponsors {
+   padding-top: 25px;
+   padding-bottom: 25px;
+   clear: both;
+   text-align: center;
+   line-height: 50px;
+   background-color: #878787;
+   background-color: #071829 !important;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,878787+50,ffffff+100&0+0,0.5+50,0+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(135, 135, 135, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(135, 135, 135, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(135, 135, 135, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+   /* IE6-9 */
+   position: relative;
+ }
+
+ #footer-sponsors:before,
+ #footer-sponsors:after {
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background-color: #fff;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+20,ffffff+50,ffffff+80&0+20,0.6+50,0+80 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 80%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 80%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 80%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #footer-sponsors:before {
+   top: 0;
+ }
+
+ #footer-sponsors:after {
+   bottom: 0;
+ }
+
+ #footer-sponsors li {
+   display: inline-block;
+   margin-left: 20px;
+   margin-right: 20px;
+   opacity: 0.7;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+ }
+
+ #footer-sponsors li:hover {
+   opacity: 1;
+ }
+
+ #footer-sponsors a {
+   display: inline-block;
+ }
+
+ #footer-sponsors img {
+   vertical-align: middle;
+ }
+
+ /* END: Footer  **************/
+ #footer {
+   height: 320px;
+   clear: both;
+   position: relative;
+
+   background: url("../images/footer-gradient.png") 0 0 repeat-x;
+ }
+
+ #footer,
+ #footer a,
+ #footer a:visited,
+ #footer a:hover {
+   color: #fff;
+ }
+
+ #footer__inner {
+   padding-top: 40px;
+   padding-left: 45px;
+   padding-right: 45px;
+   padding-bottom: 75px;
+   height: 100%;
+   background: url("../images/footer_retina-bg5e1f.png") 0 0 no-repeat;
+   background-size: contain;
+   position: relative;
+ }
+
+ #footer__inner #footer-logo {
+   display: block;
+   position: absolute;
+   bottom: 185px;
+   right: 305px;
+   width: 200px;
+   height: 60px;
+   color: #fff;
+   opacity: 0.6;
+ }
+
+ #footer__inner #footer-logo svg {
+   fill: #fff;
+ }
+
+ #footer__inner .footer-menu {
+   float: left;
+   text-transform: uppercase;
+ }
+
+ #footer__inner .footer-menu li {
+   margin-bottom: 15px;
+ }
+
+ #footer__inner .footer-menu li a {
+   color: rgba(255, 255, 255, 0.5);
+   -webkit-transition: color 0.2s;
+   -moz-transition: color 0.2s;
+   -ms-transition: color 0.2s;
+   -o-transition: color 0.2s;
+   transition: color 0.2s;
+ }
+
+ #footer__inner .footer-menu li a:hover {
+   color: #fff;
+ }
+
+ #footer__inner #footer-menu-left {
+   margin-right: 75px;
+ }
+
+ #footer__bottom {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 75px;
+   line-height: 75px;
+   background-color: #5e0005;
+   background-color: rgba(94, 0, 5, 0.5);
+ }
+
+ #footer__bottom #footer__bottom__inner {
+   padding-left: 40px;
+   padding-right: 40px;
+   height: 100%;
+   position: relative;
+ }
+
+ #footer__bottom #footer-mobile-links {
+   float: left;
+ }
+
+ #footer__bottom #footer-mobile-links a {
+   display: inline-block;
+ }
+
+ #footer__bottom #footer-mobile-links a:first-child {
+   margin-left: -4px;
+ }
+
+ #footer__bottom #footer-mobile-links a:first-child svg {
+   width: 100px;
+   height: auto;
+ }
+
+ #footer__bottom #footer-mobile-links a svg {
+   width: 108px;
+   height: auto;
+ }
+
+ #footer__bottom #footer-mobile-links svg {
+   vertical-align: middle;
+ }
+
+ #footer__bottom #footer-copyright {
+   position: absolute;
+   top: 22px;
+   right: 30px;
+   font-size: 14px;
+   opacity: 0.8;
+   line-height: 1;
+ }
+
+ #footer__bottom #footer-copyright a {
+   font-weight: 600;
+ }
+
+ #footer__bottom #footer-powered {
+   padding-top: 3px;
+   text-align: right;
+ }
+
+ #footer__bottom #footer-powered svg {
+   display: inline-block;
+   vertical-align: middle;
+ }
+
+ body.home {
+   background-image: url("../images/tmp/home-kv.png");
+   background-position: center 0;
+   background-repeat: no-repeat;
+ }
+
+ body.home .grid-item__inner {
+   background-color: #fff;
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ /* BEGIN: Home Top **************/
+ #home-top {
+   padding-bottom: 20px;
+ }
+
+ #home-visual {
+   height: 510px;
+   justify-content: center;
+   position: relative;
+ }
+
+
+ #home-visual #home-visual__atp {
+   padding-top: 30px;
+   width: 170px;
+   height: 190px;
+   position: absolute;
+
+   bottom: 5px;
+   z-index: 1;
+   background-image: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/images/svg/rank_frame.svg");
+   background-position: center 0;
+   background-repeat: no-repeat;
+   line-height: 1;
+ }
+
+ #home-visual #home-visual__atp .atp-rank>span {
+   display: block;
+   text-align: center;
+ }
+
+ #home-visual #home-visual__atp .atp-rank .atp-rank-label {
+   color: #fff;
+   opacity: 1 !important;
+   font-size: 13px;
+ }
+
+ #home-visual #home-visual__atp .atp-rank .atp-rank-pos,
+ #home-visual #home-visual__atp .atp-rank .atp-rank-pts {
+   color: #e1e1e1;
+   font-size: 28px;
+   font-family: "Gotham-Bold", sans-serif;
+ }
+
+ #home-visual #home-visual__atp .atp-rank .atp-rank-pos {
+   margin-top: 5px;
+   margin-bottom: 10px;
+ }
+
+ #home-visual #home-visual__atp .atp-rank .atp-rank-pos span {
+   font-size: 50px;
+ }
+
+ #home-visual #home-visual__atp .atp-rank .atp-rank-pts {
+   font-size: 26px;
+
+ }
+
+ #home-visual #home-visual__atp .atp-rank.atp-points {
+   padding-top: 15px;
+   position: relative;
+ }
+
+ #home-visual #home-visual__atp .atp-rank.atp-points .atp-rank-label {
+   margin-bottom: 10px;
+ }
+
+ #home-visual #home-visual__atp .atp-rank.atp-points:before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -55px;
+   width: 110px;
+   height: 2px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,00a5e4+50,00a5e4+100&0+0,1+50,0+100 */
+   background: -moz-linear-gradient(left, rgba(0, 165, 228, 0) 0%, #ffffff 50%, rgba(0, 165, 228, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(0, 165, 228, 0) 0%, #ffffff 50%, rgba(0, 165, 228, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(0, 165, 228, 0) 0%, #feffff 50%, rgba(0, 165, 228, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000a5e4', endColorstr='#0000a5e4', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #home-visual #home-visual__timeline {
+   position: absolute;
+   right: 25px;
+   bottom: 25px;
+   z-index: 1;
+   color: #fff;
+ }
+
+ #home-visual #home-visual__timeline .timeline-title {
+   margin-bottom: 10px;
+   text-align: right;
+   text-transform: uppercase;
+   opacity: 0.8;
+ }
+
+ #home-visual #home-visual__timeline .timeline-title,
+ #home-visual #home-visual__timeline .timeline-title a,
+ #home-visual #home-visual__timeline .timeline-title a:visited,
+ #home-visual #home-visual__timeline .timeline-title a:hover {
+   color: #00a5e4;
+ }
+
+ #home-visual #home-visual__timeline .timeline-content-wrap {
+   padding-left: 70px;
+   position: relative;
+ }
+
+ #home-visual #home-visual__timeline .timeline-avatar {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+   transform: translateY(-50%);
+   width: 50px;
+   height: 50px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   overflow: hidden;
+   border: 2px solid #0e4379;
+   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+ }
+
+ #home-visual #home-visual__timeline .timeline-content {
+   background-color: #0180c4;
+   background-color: rgba(1, 128, 196, 0.4);
+   border-left: 2px solid #fff;
+   position: relative;
+ }
+
+ #home-visual #home-visual__timeline .timeline-content:before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: -8px;
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+   transform: translateY(-50%);
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 8px 8px 8px 0;
+   border-color: transparent #ffffff transparent transparent;
+ }
+
+ #home-visual #home-visual__timeline .timeline-content .timeline-excerpt {
+   padding: 15px;
+   width: 260px;
+   font-size: 14px;
+   font-family: 'Signika Negative Light';
+ }
+
+ #home-visual #home-visual__timeline .timeline-content p {
+   margin-bottom: 0;
+ }
+
+ #home-visual #home-visual__link {
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 0;
+ }
+
+ #home-tour {
+   margin-top: 330px;
+   height: 250px;
+   overflow: hidden;
+   /* BEGIN: Current Tournament *****************/
+   /* END: Current Tournament *****************/
+ }
+
+ #home-tour #current-tournament {
+   height: 100%;
+ }
+
+ #home-tour #current-tournament__inner {
+   height: 100%;
+   position: relative;
+   background-color: #00a5e4;
+   background-color: rgba(0, 165, 228, 0.6);
+ }
+
+ #home-tour #current-tournament__inner:after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 9;
+   width: 4px;
+   height: 100%;
+   background-color: #00a5e4;
+   background-color: rgba(0, 165, 228, 0.6);
+ }
+
+ #home-tour #current-tournament__inner.surface-clay {
+   background-color: #cf4910;
+   background-color: rgba(207, 73, 16, 0.6);
+ }
+
+ #home-tour #current-tournament__inner.surface-clay:after {
+   background-color: #cf4910;
+   background-color: rgba(207, 73, 16, 0.6);
+ }
+
+ #home-tour #current-tournament__inner.surface-grass {
+   background-color: #578c20;
+   background-color: rgba(87, 140, 32, 0.6);
+ }
+
+ #home-tour #current-tournament__inner.surface-grass:after {
+   background-color: #578c20;
+   background-color: rgba(87, 140, 32, 0.6);
+ }
+
+ #home-tour #current-tournament__inner .tournament-img {
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 1;
+   width: 178px;
+   height: 100%;
+   overflow: hidden;
+ }
+
+ #home-tour #current-tournament__inner .tournament-img img {
+   max-width: none;
+   height: 100%;
+   width: auto;
+ }
+
+ #home-tour #current-tournament__inner .current-tournament-content-wrap {
+   position: relative;
+   z-index: 9;
+   color: #fff;
+ }
+
+ #home-tour #current-tournament__inner .current-tournament-title {
+   margin-bottom: 0;
+   padding: 20px 30px 15px 30px;
+   font-size: 17px;
+   background-color: rgba(0, 0, 0, 0.3);
+   line-height: 1;
+ }
+
+ #home-tour #current-tournament__inner .current-tournament-title .label {
+   display: block;
+   margin-bottom: 5px;
+   opacity: 0.6;
+   font-size: 15px;
+ }
+
+ #home-tour #current-tournament__inner .current-tournament-title .label a {
+   color: #fff;
+ }
+
+ #home-tour #current-tournament__inner .current-tournament-content {
+   padding: 13px 30px 20px 25px;
+ }
+
+ #home-tour #current-tournament__inner .current-tournament-content p {
+   height: 30px;
+   line-height: 30px;
+   margin-bottom: 10px;
+ }
+
+ #home-tour #current-tournament__inner .current-tournament-content p:last-child {
+   margin-bottom: 0;
+ }
+
+ #home-tour #current-tournament__inner .current-tournament-content .n-icon {
+   display: inline-block;
+   margin-right: 5px;
+   width: 30px;
+ }
+
+ #home-tour #live-results-home {
+   height: 100%;
+ }
+
+ #home-tour #live-results #live-results__inner {
+   background-color: rgba(0, 89, 156, 0.6);
+ }
+
+ #home-tour #live-results #live-results__inner .results-heading {
+   background-color: rgba(0, 0, 0, 0.1);
+ }
+
+ #home-tour #next-tournament {
+   height: 100%;
+ }
+
+ #home-tour #next-tournament #next-tournament__inner {
+   display: block;
+   height: 100%;
+   background-color: rgba(0, 89, 156, 0.6);
+   position: relative;
+ }
+
+ #home-tour #next-tournament #next-tournament__inner:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 9;
+   width: 100%;
+   height: 4px;
+   background-color: rgba(0, 165, 228, 0.6);
+ }
+
+ #home-tour #next-tournament #next-tournament__inner.surface-clay {
+   background-color: rgba(207, 73, 16, 0.6);
+ }
+
+ #home-tour #next-tournament #next-tournament__inner.surface-clay:after {
+   background-color: rgba(207, 73, 16, 0.6);
+ }
+
+ #home-tour #next-tournament #next-tournament__inner.surface-grass {
+   background-color: rgba(87, 140, 32, 0.6);
+ }
+
+ #home-tour #next-tournament #next-tournament__inner.surface-grass:after {
+   background-color: rgba(87, 140, 32, 0.6);
+ }
+
+ #home-tour #next-tournament #next-tournament__inner .next-tournament-content-wrap {
+   position: relative;
+   z-index: 9;
+   color: #fff;
+ }
+
+ #home-tour #next-tournament #next-tournament__inner .next-heading {
+   display: block;
+   padding: 15px 25px 10px;
+   background-color: rgba(0, 0, 0, 0.3);
+   color: #fff;
+   color: rgba(255, 255, 255, 0.6);
+   font-size: 14px;
+   text-transform: uppercase;
+ }
+
+ #home-tour #next-tournament #next-tournament__inner .tournament-img {
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background-position: left top;
+ }
+
+ #home-tour #next-tournament #next-tournament__inner .tournament-img img {
+   height: 100%;
+   width: auto;
+ }
+
+ #home-tour #next-tournament #next-tournament__inner .tour-logo {
+   display: block;
+   width: 115px;
+   height: 115px;
+   padding-top: 6px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   z-index: 2;
+   margin-top: -25px;
+   margin-left: -57px;
+   border: 2px solid #fff;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   overflow: hidden;
+   text-align: center;
+ }
+
+ #home-tour #next-tournament #next-tournament__inner .tour-logo .tour-logo__inner {
+   display: inline-block;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 100px;
+   height: 100px;
+ }
+
+ #home-tour #next-tournament #next-tournament__inner .tour-logo .tour-logo__inner img {
+   width: 100%;
+   height: auto;
+ }
+
+ #home-tour #next-tournament.no-active-tournament #next-tournament__inner:after {
+   top: 0;
+   right: 0;
+   left: auto;
+   bottom: auto;
+   height: 100%;
+   width: 4px;
+ }
+
+ #home-tour #next-tournament.no-active-tournament #next-tournament__inner .tournament-img {
+   left: auto;
+   right: 0;
+   width: 490px;
+   overflow: visible;
+ }
+
+ #home-tour #next-tournament.no-active-tournament #next-tournament__inner.surface-hard .next-tournament-title {
+   background: linear-gradient(to right, rgba(0, 37, 84, 0.3) 0%, rgba(0, 37, 84, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ }
+
+ #home-tour #next-tournament.no-active-tournament .tour-logo {
+   left: 0 !important;
+   margin-top: -57px !important;
+ }
+
+ #home-tour #next-tournament.no-active-tournament .tour-logo img {
+   width: 100%;
+ }
+
+ #home-tour #next-tournament.no-active-tournament .next-tournament-title {
+   margin-bottom: 0;
+   padding: 20px 30px 15px 30px;
+   font-size: 22px;
+   line-height: 1;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.3+0,0+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4dffffff', endColorstr='#00ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #home-tour #next-tournament.no-active-tournament .next-tournament-title .label {
+   display: block;
+   margin-bottom: 5px;
+   opacity: 0.6;
+   font-size: 15px;
+ }
+
+ #home-tour #next-tournament.no-active-tournament .next-tournament-title .label a {
+   color: #fff;
+ }
+
+ #home-tour #next-tournament.no-active-tournament .next-tournament-content {
+   padding: 13px 30px 20px 25px;
+ }
+
+ #home-tour #next-tournament.no-active-tournament .next-tournament-content .tour-listing.tour-listing--home {
+   float: left;
+ }
+
+ #home-tour #next-tournament.no-active-tournament .next-tournament-content .tour-listing.tour-listing--home li {
+   width: 250px;
+   margin-bottom: 10px;
+ }
+
+ #home-tour #next-tournament.no-active-tournament .next-tournament-content .tour-listing.tour-listing--home .n-icon {
+   color: #fff;
+ }
+
+ #home-tour #next-tournament.no-active-tournament .next-tournament-content .n-icon {
+   display: inline-block;
+   margin-right: 5px;
+   width: 30px;
+ }
+
+ /* END: Home Top **************/
+ /* BEGIN: Home News **************/
+ #home-hews {
+   padding-top: 45px;
+   overflow: hidden;
+   background: #2c1728 url("../images/home-news-bg.png") center center no-repeat;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c41424+0,c41424+30,c41424+70,c41424+100&0+0,0.8+30,0.8+70,0+100 */
+   position: relative;
+ }
+
+ #home-hews:before,
+ #home-hews:after {
+   content: "";
+   width: 100%;
+   height: 4px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed1c2e+0,ed1c2e+50,ed1c2e+100&0+17,1+50,0+83 */
+   background: -moz-linear-gradient(left, rgba(237, 28, 46, 0) 0%, rgba(237, 28, 46, 0) 17%, #ed1c2e 50%, rgba(237, 28, 46, 0) 83%, rgba(237, 28, 46, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(237, 28, 46, 0) 0%, rgba(237, 28, 46, 0) 17%, #ed1c2e 50%, rgba(237, 28, 46, 0) 83%, rgba(237, 28, 46, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(237, 28, 46, 0) 0%, rgba(237, 28, 46, 0) 17%, #ed1c2e 50%, rgba(237, 28, 46, 0) 83%, rgba(237, 28, 46, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ed1c2e', endColorstr='#00ed1c2e', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #home-hews:after {
+   top: auto;
+   bottom: 0;
+ }
+
+ .grid-item {
+   height: 375px;
+   margin-bottom: 10px;
+ }
+
+ .grid-item,
+ .grid-item a,
+ .grid-item a:hover,
+ .grid-item a:visited {
+   color: #fff;
+   color: rgba(255, 255, 255, 0.7);
+ }
+
+ .grid-item .grid-item__inner {
+   height: 100%;
+   -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+   position: relative;
+ }
+
+ .grid-item .grid-item__inner:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   border-bottom: 4px solid #ed1c2e;
+   border-bottom: 4px solid rgba(237, 28, 46, 0.5);
+ }
+
+ .grid-item .grid-thumb {
+   height: 150px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .grid-item .grid-thumb:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 20%;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,0.3+100 */
+   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#4d000000', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .grid-item .grid-thumb img {
+   width: 100%;
+   height: auto;
+   vertical-align: top;
+ }
+
+ .grid-item .grid-content {
+   padding: 15px 15px 20px 15px;
+   font-family: "Signika Negative Light", sans-serif;
+ }
+
+ .grid-item .grid-title {
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ .grid-item .grid-title,
+ .grid-item .grid-title a,
+ .grid-item .grid-title a:visited,
+ .grid-item .grid-title a:hover {
+   color: #fff;
+ }
+
+ .grid-item .grid-meta {
+   font-size: 15px;
+ }
+
+ .grid-item .grid-excerpt {
+   height: 80px;
+   overflow: hidden;
+ }
+
+ .grid-item .grid-excerpt p:last-child {
+   margin-bottom: 0;
+ }
+
+ .grid-item .grid-category {
+   position: absolute;
+   bottom: 15px;
+   font-size: 15px;
+ }
+
+ .grid-item .grid-category .n-icon {
+   margin-left: 10px;
+ }
+
+ .grid-item .grid-category .n-icon:first-child {
+   margin-left: 0;
+ }
+
+ .grid-item .n-icon {
+   margin-right: 3px;
+   width: 22px;
+ }
+
+ .grid-item.grid-item--big {
+   height: 760px;
+   position: relative;
+ }
+
+ .grid-item.grid-item--big .grid-thumb {
+   height: 390px;
+ }
+
+ .grid-item.grid-item--big .grid-title {
+   margin-top: 20px;
+   font-size: 26px;
+ }
+
+ .grid-item.grid-item--big .grid-content {
+   padding: 35px 35px 20px 35px;
+ }
+
+ .grid-item.grid-item--big .grid-excerpt {
+   height: 160px;
+ }
+
+ .grid-item.grid-item--big .grid-category {
+   bottom: 25px;
+ }
+
+ .grid-item .n-icon {
+   color: #f27066;
+ }
+
+ .grid-item .ribbon {
+   display: block;
+   width: 65px;
+   height: 50px;
+   position: absolute;
+   top: -14px;
+   right: 15px;
+ }
+
+ #home-news__more {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   clear: both;
+ }
+
+ #home-news__more a {
+   color: #fff;
+   color: rgba(255, 255, 255, 0.5);
+   font-size: 14px;
+   text-transform: uppercase;
+   -webkit-transition: color 0.2s;
+   -moz-transition: color 0.2s;
+   -ms-transition: color 0.2s;
+   -o-transition: color 0.2s;
+   transition: color 0.2s;
+ }
+
+ #home-news__more a:hover {
+   color: #fff;
+ }
+
+ /* END: Home News **************/
+ /* BEGIN: Home Gallery **************/
+ #home-gallery {
+   background: #092a3d url("../images/home-gallery-bg.png") center center no-repeat;
+   position: relative;
+ }
+
+ #home-gallery:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#11748f+0,11748f+50,11748f+100&0+0,0.8+50,0+100 */
+   background: -moz-linear-gradient(left, rgba(17, 116, 143, 0) 0%, rgba(17, 116, 143, 0.8) 50%, rgba(17, 116, 143, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(17, 116, 143, 0) 0%, rgba(17, 116, 143, 0.8) 50%, rgba(17, 116, 143, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(17, 116, 143, 0) 0%, rgba(17, 116, 143, 0.8) 50%, rgba(17, 116, 143, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0011748f', endColorstr='#0011748f', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #photo-gallery {
+   padding: 35px 35px 0 35px;
+   width: 645px;
+   height: 315px;
+   float: left;
+   background-color: #0a6285;
+   position: relative;
+ }
+
+ #photo-gallery .photo-gallery__latest {
+   float: left;
+   width: 380px;
+   height: 215px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ #photo-gallery .photo-gallery__latest a {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ #photo-gallery .photo-gallery__latest:hover a {
+   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   -moz-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+
+ #photo-gallery .photo-gallery__latest img {
+   width: 100%;
+   height: auto;
+ }
+
+ #photo-gallery .photo-gallery__other {
+   float: right;
+ }
+
+ #photo-gallery .photo-gallery__other .item {
+   margin-top: 5px;
+   width: 190px;
+   height: 105px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ #photo-gallery .photo-gallery__other .item:first-child {
+   margin-top: 0;
+ }
+
+ #photo-gallery .photo-gallery__other .item a {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ #photo-gallery .photo-gallery__other .item:hover a {
+   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   -moz-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+
+ #photo-gallery .photo-gallery__other .item img {
+   width: 100%;
+   height: auto;
+ }
+
+ #video-gallery {
+   padding: 35px;
+   width: 450px;
+   height: 315px;
+   float: left;
+   position: relative;
+   background-color: #0b546f;
+ }
+
+ #video-gallery .video-gallery__latest {
+   width: 380px;
+   height: 215px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ #video-gallery .video-gallery__latest img {
+   width: 100%;
+   height: auto;
+ }
+
+ #video-gallery .video-gallery__latest .n-icon-play {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   width: 55px;
+   height: 55px;
+ }
+
+ .gallery-label {
+   display: block;
+   position: absolute;
+   bottom: 5%;
+   left: 0;
+   right: 0;
+   font-size: 14px;
+   text-align: center;
+   text-transform: uppercase;
+ }
+
+ .gallery-label a {
+   color: #fff;
+   color: rgba(255, 255, 255, 0.5);
+   -webkit-transition: color 0.2s;
+   -moz-transition: color 0.2s;
+   -ms-transition: color 0.2s;
+   -o-transition: color 0.2s;
+   transition: color 0.2s;
+ }
+
+ .gallery-label a:hover {
+   color: #fff;
+ }
+
+ .gallery-label.sep-text-wrap:before {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,00a5e4+100&0+0,1+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #00a5e4 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #00a5e4 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #00a5e4 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00a5e4', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .gallery-label.sep-text-wrap:after {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,ffffff+100&1+0,0+100 */
+   background: -moz-linear-gradient(left, #00a5e4 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, #00a5e4 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, #00a5e4 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a5e4', endColorstr='#00ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ /* END: Home Gallery **************/
+ /* BEGIN: Home Featured **************/
+ #home-featured {
+   padding-top: 30px;
+   padding-bottom: 30px;
+   background: #052540 url("../images/home-featured-bg.png") center center no-repeat;
+   position: relative;
+   overflow: hidden;
+ }
+
+ #home-featured:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b68b1+0,1b68b1+50,1b68b1+100&0+0,0.8+50,0+100 */
+   background: -moz-linear-gradient(left, rgba(27, 104, 177, 0) 0%, rgba(27, 104, 177, 0.8) 50%, rgba(27, 104, 177, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(27, 104, 177, 0) 0%, rgba(27, 104, 177, 0.8) 50%, rgba(27, 104, 177, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(27, 104, 177, 0) 0%, rgba(27, 104, 177, 0.8) 50%, rgba(27, 104, 177, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001b68b1', endColorstr='#001b68b1', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #home-featured #home-featured__banner {
+   float: left;
+   width: 430px;
+ }
+
+ #home-featured #home-featured__diduknow {
+   margin-left: 70px;
+   float: left;
+   width: 642px;
+   height: 335px;
+   position: relative;
+ }
+
+ #home-featured #home-featured__diduknow:after {
+   content: "";
+   position: absolute;
+   bottom: -15px;
+   left: -437px;
+   width: 169.7%;
+
+   height: 4px;
+   background-color: rgba(84, 207, 255, 0.5);
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__content-wrap {
+   width: 50%;
+   height: 347px;
+   float: left;
+   color: #fff;
+   background-color: rgba(1, 128, 196, 0.4);
+   position: relative;
+   z-index: 9;
+   position: relative;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__content-wrap:before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: -68px;
+   z-index: 0;
+   height: 100%;
+   width: 68px;
+   background: url("../images/shadow_did_you_know.png") 0 center no-repeat;
+   -webkit-background-size: contain;
+   background-size: contain;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__content-wrap:after {
+   content: "";
+   position: absolute;
+   bottom: 4px;
+   left: 0;
+   z-index: 0;
+   opacity: 0.1;
+   width: 100%;
+   height: 50%;
+   background-image: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/images/svg/bgd_01.svg");
+   background-repeat: no-repeat;
+   background-position: 0 100%;
+   -webkit-background-size: contain;
+   background-size: contain;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__content-wrap .diduknow-heading {
+   margin-bottom: 0;
+   text-transform: uppercase;
+   opacity: 0.6;
+   padding: 25px 20px 15px 25px;
+   font-size: 14px;
+   background-color: rgba(0, 165, 228, 0.2);
+   position: relative;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__content-wrap .diduknow-heading:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,00a5e4+100&0.5+0,0+100 */
+   background: -moz-linear-gradient(left, rgba(0, 165, 228, 0.5) 0%, rgba(0, 165, 228, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(0, 165, 228, 0.5) 0%, rgba(0, 165, 228, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(0, 165, 228, 0.5) 0%, rgba(0, 165, 228, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8000a5e4', endColorstr='#0000a5e4', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__content-wrap .diduknow-content {
+   padding: 25px 20px 20px 25px;
+   font-size: 20px;
+   opacity: 0.8;
+   font-family: 'Signika Negative Light';
+   position: relative;
+   z-index: 1;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__content-wrap .diduknow-more {
+   color: #fff;
+   text-transform: uppercase;
+   background-color: #00a5e4;
+   background-color: rgba(0, 165, 228, 0.2);
+   display: block;
+   padding: 10px 30px 8px;
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   z-index: 2;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__content-wrap .diduknow-more:hover {
+   background-color: #108ed1;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__img {
+   width: 50%;
+   height: 100%;
+   float: left;
+   position: relative;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__img:after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.05);
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__img .star {
+   display: block;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   z-index: 9;
+ }
+
+ #home-featured #home-featured__diduknow .featured__diduknow__img .star .n-icon {
+   width: 40px;
+ }
+
+ /* END: Home Featured **************/
+ /* BEGIN: Home Nolefam **************/
+ #home-nolefam {
+   padding-top: 45px;
+   padding-bottom: 25px;
+ }
+
+ #home-nolefam #nolefam-link {
+   margin-top: 5px;
+   margin-right: 20px;
+   padding-top: 7px;
+   padding-left: 7px;
+   padding-right: 10px;
+   float: left;
+   width: 165px;
+   height: 50px;
+   position: relative;
+   z-index: 9;
+   border-right: 2px solid rgba(255, 255, 255, 0.4);
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0.2+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#33ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-wrap {
+   width: auto;
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-avatar {
+   float: left;
+   margin-right: 20px;
+   width: 60px;
+   height: 60px;
+   border: 2px solid #fff;
+   position: static;
+   top: auto;
+   left: auto;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   overflow: hidden;
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-avatar img {
+   width: 100%;
+   height: auto;
+   transform-style: initial !important;
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-content {
+   margin-top: 5px;
+   margin-left: 0;
+   float: left;
+   width: 835px;
+   padding: 15px 10px 15px 20px;
+   height: 50px;
+   line-height: 20px;
+   background-color: #235b76;
+   border-left: 2px solid #53cfff;
+   position: relative;
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-content:before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: -12px;
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+   transform: translateY(-50%);
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 12px 12px 12px 0;
+   border-color: transparent #53cfff transparent transparent;
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-content .live-item-txt {
+   display: inline-block;
+   opacity: 0.7;
+   position: absolute;
+   top: 15px;
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-content .live-item-txt p:last-child {
+   margin-bottom: 0;
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-content .nolefam-link {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9;
+   width: 100%;
+   height: 100%;
+ }
+
+ #home-nolefam #nolefam-carousel .live-item-author {
+   display: inline-block;
+   margin-right: 10px;
+   font-weight: 600;
+   font-size: 20px;
+ }
+
+ /* END: Home Nolefam **************/
+ /* BEGIN: Global **************/
+ #live-results {
+   height: 100%;
+ }
+
+ #live-results__inner {
+   height: 100%;
+ }
+
+ #live-results__inner .results-heading {
+   padding: 20px 15px 20px 25px;
+   color: #fff;
+ }
+
+ #live-results__inner .results-heading .label {
+   opacity: 0.6;
+   font-size: 14px;
+ }
+
+ #live-results__inner .results-heading .results-meta {
+   float: right;
+   font-size: 18px;
+ }
+
+ #live-results__inner .results-player-wrap {
+   padding-left: 20px;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   color: #fff;
+   background-color: rgba(255, 255, 255, 0.2);
+   position: relative;
+ }
+
+ #live-results__inner .results-player-wrap:after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -12px;
+   z-index: 0;
+   width: 100%;
+   height: 12px;
+   background: url("../images/shadow_results.png") center 0 no-repeat;
+   background-size: contain;
+ }
+
+ #live-results__inner .results-player-wrap .player-img {
+   margin-right: 10px;
+   padding: 4px;
+   display: inline-block;
+   width: 44px;
+   height: 44px;
+   border: 2px solid #fff;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+ }
+
+ #live-results__inner .results-player-wrap .player-img img {
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+ }
+
+ #live-results__inner .results-player-wrap.player-second {
+   background-color: rgba(255, 255, 255, 0.1);
+ }
+
+ #live-results__inner .player-sets {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 9;
+   height: 100%;
+   line-height: 80px;
+   text-align: center;
+   font-size: 26px;
+ }
+
+ #live-results__inner .player-sets span {
+   display: block;
+   float: left;
+   width: 50px;
+   height: 100%;
+   overflow: hidden;
+ }
+
+ #live-results__inner .player-sets span:nth-child(odd) {
+   background-color: rgba(255, 255, 255, 0.3);
+ }
+
+ #live-results__inner .player-sets span.set-won {
+   color: #0099d9;
+   font-family: "Gotham-Bold", sans-serif;
+   font-size: 22px;
+   position: relative;
+ }
+
+ #live-results__inner .player-sets span.set-won:before,
+ #live-results__inner .player-sets span.set-won:after {
+   content: "";
+   display: block;
+   position: absolute;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+ }
+
+ #live-results__inner .player-sets span.set-won:before {
+   z-index: -1;
+   top: 50%;
+   left: 50%;
+   width: 36px;
+   height: 36px;
+   margin-top: -18px;
+   margin-left: -18px;
+   background-color: #fff;
+ }
+
+ #live-results__inner .player-sets span.set-won:after {
+   z-index: -1;
+   top: 50%;
+   left: 50%;
+   width: 64px;
+   height: 64px;
+   margin-top: -32px;
+   margin-left: -32px;
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ #live-results__inner .player-sets span .n-icon {
+   width: 35px;
+   vertical-align: middle;
+ }
+
+ #live-results__inner .player-sets .game-result {
+   width: 75px;
+   line-height: 50px;
+   background-color: rgba(255, 255, 255, 0.3);
+ }
+
+ #live-results__inner #novak-sets .game-result {
+   position: relative;
+   overflow: visible;
+ }
+
+ #live-results__inner #novak-sets .game-result:after {
+   content: "";
+   display: block;
+   width: 55px;
+   height: 6px;
+   position: absolute;
+   bottom: -3px;
+   left: 10px;
+   background-color: #fff;
+ }
+
+ #live-results__inner #live-results-powered {
+   padding-top: 10px;
+   padding-right: 10px;
+   font-size: 10px;
+   text-align: right;
+   text-transform: uppercase;
+   opacity: 0.4;
+ }
+
+ #live-results__inner #live-results-powered a {
+   color: #fff;
+ }
+
+ /* END: Global **************/
+ #main {
+   display: block;
+   padding-top: 25px;
+   padding-bottom: 25px;
+ }
+
+ #cat-news {
+   float: right;
+ }
+
+ #cat-news__featured {
+   margin-bottom: 10px;
+ }
+
+ #cat-news__featured .grid-item--big {
+   margin-bottom: 10px;
+   width: auto;
+   height: 630px;
+   float: none;
+ }
+
+ #cat-news__featured .grid-item--big .grid-thumb {
+   height: 320px;
+ }
+
+ .grid-item__inner,
+ .news-item {
+   background-color: #f27066;
+   background-color: rgba(242, 112, 102, 0.3);
+ }
+
+ .grid-item-news.grid-item {
+   height: 360px;
+ }
+
+ .grid-item-news.grid-item .grid-thumb {
+   height: 130px;
+ }
+
+ .news-item {
+   margin-bottom: 10px;
+   position: relative;
+ }
+
+ .news-item:before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   border-bottom: 4px solid #ed1c2e;
+   border-bottom: 4px solid rgba(237, 28, 46, 0.5);
+ }
+
+ .news-item .news-thumb {
+   margin-right: 25px;
+   float: left;
+   width: 290px;
+   height: 165px;
+   overflow: hidden;
+ }
+
+ .news-item .news-content {
+   padding: 10px 20px;
+ }
+
+ .news-item .news-content,
+ .news-item .news-content a {
+   color: #fff;
+   color: rgba(255, 255, 255, 0.7);
+ }
+
+ .news-item .news-meta {
+   margin-bottom: 0;
+ }
+
+ .news-item .news-meta .n-icon:first-child {
+   margin-left: -2px;
+ }
+
+ .news-item .news-title {
+   margin-bottom: 0;
+   height: 32px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+ }
+
+ .news-item .news-title,
+ .news-item .news-title a {
+   color: #fff;
+ }
+
+ .news-item .news-excerpt {
+   font-family: 'Signika Negative Light';
+ }
+
+ .news-item .news-excerpt p:last-child {
+   margin-bottom: 0;
+ }
+
+ .news-item .n-icon {
+   color: #f27066;
+ }
+
+ .news-item .news-category {
+   position: absolute;
+   bottom: 15px;
+ }
+
+ .news-item .news-category .n-icon {
+   margin-left: 10px;
+ }
+
+ .news-item .news-category .n-icon:first-child {
+   margin-left: -2px;
+ }
+
+ .news-item.news-item-has-thumb .news-category {
+   left: 315px;
+ }
+
+ .news-item .news-share-count {
+   position: absolute;
+   bottom: 15px;
+   right: 25px;
+   color: #fff;
+   color: rgba(255, 255, 255, 0.6);
+ }
+
+ .news-item .news-share-count .n-icon {
+   opacity: 0.5;
+ }
+
+ #cat-news__more {
+   padding-top: 25px;
+   padding-bottom: 30px;
+   clear: both;
+ }
+
+ .search-page #main {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,ffffff+100&0.5+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8000a5e4', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .search-page .sidebar__inner {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,ffffff+100&0.5+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8000a5e4', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .search-page #cat-news__inner {
+   padding-top: 20px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,54cfff+100&0.2+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(84, 207, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(84, 207, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0.2) 0%, rgba(84, 207, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3354cfff', endColorstr='#0054cfff', GradientType=0);
+   /* IE6-9 */
+   position: relative;
+ }
+
+ .search-page #cat-news__inner:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,7db9e8+71&1+0,0+71 */
+   background: -moz-linear-gradient(left, #00a5e4 0%, rgba(125, 185, 232, 0) 71%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, #00a5e4 0%, rgba(125, 185, 232, 0) 71%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, #00a5e4 0%, rgba(125, 185, 232, 0) 71%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a5e4', endColorstr='#007db9e8', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .search-page #cat-news__inner #big-search-icon {
+   display: block;
+   position: absolute;
+   top: -25px;
+   right: -30px;
+ }
+
+ .search-page .grid-item__inner,
+ .search-page .news-item {
+   background-color: #54cfff;
+   background-color: rgba(84, 207, 255, 0.2);
+ }
+
+ .search-page .grid-item__inner:before,
+ .search-page .news-item:before {
+   border-color: #54cfff;
+   border-color: rgba(84, 207, 255, 0.5);
+ }
+
+ .search-page .grid-item__inner .n-icon,
+ .search-page .news-item .n-icon {
+   color: #54cfff;
+ }
+
+ .search-page .news-archive-submit-label {
+   color: #00599c;
+ }
+
+ .search-title {
+   text-transform: uppercase;
+   margin-bottom: 5px;
+   margin-left: 20px;
+   font-family: 'Gotham-Medium';
+   opacity: 0.6;
+ }
+
+ .search-term {
+   margin-left: 15px;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   color: #54cfff;
+   height: 32px;
+   line-height: 32px;
+ }
+
+ .search-term .n-icon {
+   width: 32px;
+ }
+
+ body.news-page {
+   /* BEGIN: cat list widget ****/
+   /* END: cat list widget ****/
+   /* BEGIN: Sidebar *****/
+   /* BEGIN: news archive widget ****/
+   /* END: news archive widget ****/
+   /* END: Sidebar *****/
+ }
+
+ body.news-page #main {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c41424+0,ffffff+100&0.5+0,0+100 */
+   background: #071829 url("../images/news-bg.png") center 0 repeat-x;
+ }
+
+ body.news-page .sidebar__inner {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27066+0,ffffff+100&0.5+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(242, 112, 102, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(242, 112, 102, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(242, 112, 102, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80f27066', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ body.news-page .cat-list li .n-icon {
+   color: #f27066;
+ }
+
+ body.news-page .drops .nice-select .list {
+   background-color: #9d0917;
+ }
+
+ body.news-page .album-item .album-preview-thumb .album-count {
+   background-color: rgba(255, 255, 255, 0.3);
+ }
+
+ body.news-page .album-item .album-content {
+   background-color: rgba(242, 112, 102, 0.3);
+ }
+
+ body.news-page .album-item .album-content:after {
+   background-color: rgba(237, 28, 46, 0.5);
+ }
+
+ .single #sidebar {
+   width: 360px;
+ }
+
+ .sidebar .sidebar__inner {
+   padding-top: 20px;
+   padding-left: 25px;
+   padding-right: 20px;
+ }
+
+ .sidebar,
+ .sidebar a,
+ .sidebar select {
+   color: #fff;
+   color: rgba(255, 255, 255, 0.6);
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+ }
+
+ .sidebar a:hover {
+   color: #fff;
+ }
+
+ .sidebar li {
+   margin-bottom: 30px;
+ }
+
+ .sidebar .menu {
+   font-size: 18px;
+ }
+
+ .sidebar .widget {
+   margin-bottom: 45px;
+ }
+
+ .sidebar .widget-title {
+   margin-bottom: 25px;
+   font-family: "FuturaNDJMedium", sans-serif;
+   text-transform: uppercase;
+   color: #fff;
+   color: rgba(255, 255, 255, 0.8);
+ }
+
+ .sidebar .sidebar-top {
+   margin-top: -15px;
+   position: relative;
+ }
+
+ .sidebar .sidebar-top>svg {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+
+ .sidebar .sidebar-rss {
+   display: block;
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   top: 45px;
+   right: 10px;
+   color: #54cfff;
+   color: rgba(84, 207, 255, 0.5);
+ }
+
+ .sidebar .sidebar-rss:hover {
+   color: #54cfff;
+ }
+
+ .sidebar .sidebar-rss .n-icon {
+   width: 100%;
+ }
+
+ /* BEGIN: cat list widget ****/
+ .cat-list {
+   margin-left: -25px;
+   margin-right: -20px;
+ }
+
+ .cat-list li {
+   margin-bottom: 10px;
+   padding: 5px 20px 5px 35px;
+   font-size: 22px;
+   height: 50px;
+   line-height: 40px;
+ }
+
+ .cat-list li span {
+   float: right;
+   font-family: "Gotham-Bold", sans-serif;
+ }
+
+ .cat-list li .n-icon {
+   width: 30px;
+   margin-right: 10px;
+ }
+
+ .cat-list li.current-menu-item {
+   position: relative;
+   overflow: hidden;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27066+0,f27066+100&0+0,0.3+100 */
+   background: -moz-linear-gradient(left, rgba(242, 112, 102, 0) 0%, rgba(242, 112, 102, 0.3) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(242, 112, 102, 0) 0%, rgba(242, 112, 102, 0.3) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(242, 112, 102, 0) 0%, rgba(242, 112, 102, 0.3) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f27066', endColorstr='#4df27066', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .cat-list li.current-menu-item a {
+   color: #fff;
+ }
+
+ .cat-list li.current-menu-item .n-icon-chevron-right {
+   margin-right: 0;
+   width: 35px;
+   position: absolute;
+   top: 10px;
+   left: -12px;
+ }
+
+ /* END: cat list widget ****/
+ /* BEGIN: news archive widget ****/
+ .news-archive-submit-label {
+   display: inline-block;
+   float: right;
+   width: 60px;
+   height: 35px;
+   color: #9d0917;
+   text-align: center;
+   border: none;
+   background-color: #fff;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding-top: 5px;
+   cursor: pointer;
+ }
+
+ .drops {
+   float: left;
+ }
+
+ .drops .select-monthnum {
+   width: 165px;
+ }
+
+ .drops .select-year {
+   width: 80px;
+ }
+
+ /* END: news archive widget ****/
+ /* BEGIN: tag cloud widget ****/
+ .tag-cloud a {
+   display: inline-block;
+   margin-bottom: 15px;
+   margin-right: 15px;
+   padding: 5px 10px;
+   color: rgba(255, 255, 255, 0.6);
+   background-color: rgba(0, 0, 0, 0.15);
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+ }
+
+ .tag-cloud a:hover {
+   color: #fff;
+   background-color: rgba(255, 255, 255, 0.15);
+ }
+
+ /* END: tag cloud widget ****/
+ /* BEGIN: Photo of the week widget ****/
+ .featured-img img {
+   width: 100%;
+   height: auto;
+ }
+
+ /* END: Photo of the week widget ****/
+ .single-news {
+   padding-bottom: 40px;
+   background-color: rgba(255, 255, 255, 0.3);
+ }
+
+ #featured-section {
+   position: relative;
+ }
+
+ #featured-section:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 0;
+   width: 100%;
+   height: 50%;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,0.3+100 */
+   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#4d000000', GradientType=0);
+   /* IE6-9 */
+ }
+
+ #featured-section img {
+   width: 100%;
+ }
+
+ #featured-section .post-heading-wrap {
+   position: absolute;
+   bottom: 25px;
+   left: 190px;
+   right: 190px;
+   z-index: 9;
+ }
+
+ #featured-section .post-heading-wrap,
+ #featured-section .post-heading-wrap .entry-title,
+ #featured-section .post-heading-wrap a,
+ #featured-section .post-heading-wrap a:hover,
+ #featured-section .post-heading-wrap a:visited {
+   color: #fff;
+ }
+
+ #featured-section .post-heading-wrap .entry-title {
+   font-family: 'Gotham-Medium';
+ }
+
+ #featured-section .post-heading-wrap .entry-meta .n-icon {
+   color: #f27066;
+ }
+
+ .post-heading-wrap .entry-title {
+   color: #780005;
+ }
+
+ .post-heading-wrap,
+ .post-heading-wrap a,
+ .post-heading-wrap a:hover,
+ .post-heading-wrap a:visited {
+   color: #c41424;
+ }
+
+ .post-heading-wrap .entry-title {
+   font-size: 44px;
+   margin-bottom: 20px;
+ }
+
+ .post-heading-wrap .entry-meta>span {
+   display: inline-block;
+   margin-left: 45px;
+ }
+
+ .post-heading-wrap .entry-meta>span:first-child {
+   margin-left: 0;
+ }
+
+ .single-inner {
+   margin-left: 30px;
+   margin-right: 30px;
+   padding-left: 35px;
+   padding-right: 35px;
+   padding-bottom: 20px;
+   background-color: #fff;
+   background-color: rgba(255, 255, 255, 0.9);
+ }
+
+ .entry-tags {
+   padding-top: 30px;
+   border-top: 2px solid #c41424;
+   border-top: 2px solid rgba(196, 20, 36, 0.2);
+ }
+
+ .entry-tags .entry-tags__label {
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   color: #c41424;
+   opacity: 0.8;
+ }
+
+ .entry-tags a {
+   display: inline-block;
+   padding: 3px 7px;
+   color: #c41424;
+   color: rgba(196, 20, 36, 0.6);
+   text-transform: uppercase;
+   background-color: rgba(196, 20, 36, 0.15);
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+ }
+
+ .entry-tags a:hover {
+   background-color: rgba(196, 20, 36, 0.3);
+ }
+
+ .entry-social {
+   margin-top: 35px;
+   padding-top: 20px;
+   border-top: 2px solid #0180c4;
+   border-top: 2px solid rgba(1, 128, 196, 0.2);
+ }
+
+ .entry-social .entry-social__label {
+   margin-bottom: 0;
+   display: inline-block;
+   text-transform: uppercase;
+   color: #0180c4;
+   line-height: 50px;
+   opacity: 0.8;
+ }
+
+ .entry-social .entry-social__buttons {
+   float: right;
+ }
+
+ .entry-social .entry-social__buttons a,
+ .entry-social .entry-social__buttons a:visited {
+   color: #0180c4;
+   opacity: 0.5;
+ }
+
+ .entry-social .entry-social__buttons .social-button:hover a {
+   opacity: 1;
+ }
+
+ .entry-social .entry-social__buttons .social-buttons .n-icon {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   line-height: 30px;
+ }
+
+ .entry-social .entry-social__buttons .social-count {
+   background-color: rgba(1, 128, 196, 0.2) !important;
+ }
+
+ /* BEGIN: Comments *******/
+ .page-template-default #main,
+ .single-post #main {
+   padding-top: 0;
+ }
+
+ .page-template-default .comments,
+ .single-post .comments {
+   margin-left: 140px;
+   margin-right: 140px;
+ }
+
+ .comments {
+   margin-top: 30px;
+ }
+
+ .comments iframe {
+   z-index: 9;
+ }
+
+ #comment-tabs li {
+   margin-left: 15px;
+   display: inline-block;
+   text-transform: uppercase;
+ }
+
+ #comment-tabs li,
+ #comment-tabs li a {
+   color: #fff;
+   color: rgba(255, 255, 255, 0.8);
+ }
+
+ #comment-tabs li a {
+   display: inline-block;
+   padding: 10px 15px;
+   background-color: #54cfff;
+   background-color: rgba(84, 207, 255, 0.3);
+ }
+
+ #comment-tabs li:first-child {
+   margin-left: 0;
+ }
+
+ /* END: Comments *******/
+ /* BEGIN: Single Post *******/
+ .page-template-default .single-inner,
+ .single-post .single-inner {
+   padding-top: 25px;
+ }
+
+ .page-template-default .entry-content,
+ .single-post .entry-content {
+   padding-bottom: 40px;
+   padding-left: 125px;
+   padding-right: 125px;
+   font-size: 20px;
+ }
+
+ .page-template-default .entry-content,
+ .page-template-default .entry-content h1,
+ .page-template-default .entry-content h1 a,
+ .page-template-default .entry-content h1 a:visited,
+ .page-template-default .entry-content h1 a:hover,
+ .page-template-default .entry-content h2,
+ .page-template-default .entry-content h2 a,
+ .page-template-default .entry-content h2 a:visited,
+ .page-template-default .entry-content h2 a:hover,
+ .page-template-default .entry-content h3,
+ .page-template-default .entry-content h3 a,
+ .page-template-default .entry-content h3 a:visited,
+ .page-template-default .entry-content h3 a:hover,
+ .page-template-default .entry-content h4,
+ .page-template-default .entry-content h4 a,
+ .page-template-default .entry-content h4 a:visited,
+ .page-template-default .entry-content h4 a:hover,
+ .page-template-default .entry-content h5,
+ .page-template-default .entry-content h5 a,
+ .page-template-default .entry-content h5 a:visited,
+ .page-template-default .entry-content h5 a:hover,
+ .page-template-default .entry-content h6,
+ .page-template-default .entry-content h6 a,
+ .page-template-default .entry-content h6 a:visited,
+ .page-template-default .entry-content h6 a:hover,
+ .single-post .entry-content,
+ .single-post .entry-content h1,
+ .single-post .entry-content h1 a,
+ .single-post .entry-content h1 a:visited,
+ .single-post .entry-content h1 a:hover,
+ .single-post .entry-content h2,
+ .single-post .entry-content h2 a,
+ .single-post .entry-content h2 a:visited,
+ .single-post .entry-content h2 a:hover,
+ .single-post .entry-content h3,
+ .single-post .entry-content h3 a,
+ .single-post .entry-content h3 a:visited,
+ .single-post .entry-content h3 a:hover,
+ .single-post .entry-content h4,
+ .single-post .entry-content h4 a,
+ .single-post .entry-content h4 a:visited,
+ .single-post .entry-content h4 a:hover,
+ .single-post .entry-content h5,
+ .single-post .entry-content h5 a,
+ .single-post .entry-content h5 a:visited,
+ .single-post .entry-content h5 a:hover,
+ .single-post .entry-content h6,
+ .single-post .entry-content h6 a,
+ .single-post .entry-content h6 a:visited,
+ .single-post .entry-content h6 a:hover {
+   color: #221f1f;
+   color: rgba(34, 31, 31, 0.8);
+ }
+
+ .page-template-default .entry-content blockquote,
+ .page-template-default .entry-content q,
+ .single-post .entry-content blockquote,
+ .single-post .entry-content q {
+   display: block;
+   font-size: 20px;
+   line-height: 175%;
+   margin-left: -160px;
+   margin-right: -160px;
+   padding-top: 35px;
+   padding-right: 35px;
+   padding-bottom: 45px;
+   padding-left: 160px;
+   background: rgba(242, 112, 102, 0.1);
+   position: relative;
+   font-family: 'Merriweather Sans Italic';
+ }
+
+ .page-template-default .entry-content blockquote,
+ .page-template-default .entry-content blockquote a,
+ .page-template-default .entry-content blockquote a:visited,
+ .page-template-default .entry-content blockquote a:hover,
+ .page-template-default .entry-content q,
+ .page-template-default .entry-content q a,
+ .page-template-default .entry-content q a:visited,
+ .page-template-default .entry-content q a:hover,
+ .single-post .entry-content blockquote,
+ .single-post .entry-content blockquote a,
+ .single-post .entry-content blockquote a:visited,
+ .single-post .entry-content blockquote a:hover,
+ .single-post .entry-content q,
+ .single-post .entry-content q a,
+ .single-post .entry-content q a:visited,
+ .single-post .entry-content q a:hover {
+   color: #221f1f;
+ }
+
+ .page-template-default .entry-content blockquote:before,
+ .page-template-default .entry-content q:before,
+ .single-post .entry-content blockquote:before,
+ .single-post .entry-content q:before {
+   content: "";
+   display: block;
+   width: 60px;
+   height: 55px;
+   color: #ed1c2e;
+   opacity: 0.3;
+   position: absolute;
+   top: 30px;
+   left: 75px;
+   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzNXB4IiBoZWlnaHQ9IjM1cHgiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzUgMzUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnIGlkPSJMYXllcl94MDAyMF8xIj48cGF0aCBmaWxsPSIjRUQxQzJFIiBkPSJNMTUuNCw5LjJjMC42LDEuMywwLjgsMi44LDAuOCw0LjdjMCwyLjktMC44LDUuNS0yLjMsNy43Yy0xLjYsMi4zMDEtMy45LDQtNyw1LjEwMWMtMC42LTAuMy0xLjEtMC43LTEuNC0xLjNDNS4yLDI0LjgsNSwyNC4zLDUsMjRjMC0wLjQsMC0wLjYsMC0wLjhjMy4yLTEuNSw0LjgtMy42MDEsNS02LjJjLTEuNi0wLjItMi43LTAuNS0zLjEtMC44Yy0wLjQtMC44LTAuNy0yLTAuNy0zLjZjMC0xLjcsMC4zLTIuOCwwLjctMy40QzgsOC42LDkuNCw4LjMsMTEuMyw4LjNDMTMuMSw4LjMsMTQuNSw4LjYsMTUuNCw5LjJ6IE0yOS4yLDkuMmMwLjUsMS4zLDAuOCwyLjgsMC44LDQuN2MwLDIuOS0wLjgsNS41LTIuNCw3LjdDMjYuMSwyMy45LDIzLjcsMjUuNiwyMC43LDI2LjdDMjAsMjYuNCwxOS42LDI2LDE5LjIsMjUuNEMxOC45LDI0LjgsMTguOCwyNC4zLDE4LjgsMjRjMC0wLjQsMC0wLjYsMC0wLjhjMy4xMDEtMS41LDQuOC0zLjYwMSw0LjktNi4yYy0xLjYwMS0wLjItMi42MDEtMC41LTMtMC44Yy0wLjUtMC44LTAuNy0yLTAuNy0zLjZjMC0xLjcsMC4yLTIuOCwwLjctMy40YzEtMC42LDIuNS0wLjksNC4zLTAuOUMyNi45LDguMywyOC4zLDguNiwyOS4yLDkuMnoiLz48L2c+PC9zdmc+);
+   background-repeat: no-repeat;
+   background-size: 100%;
+ }
+
+ .page-template-default .entry-content blockquote cite,
+ .page-template-default .entry-content q cite,
+ .single-post .entry-content blockquote cite,
+ .single-post .entry-content q cite {
+   position: absolute;
+   bottom: 20px;
+   right: 35px;
+   font-size: 18px;
+ }
+
+ .single-inner .post-heading-wrap {
+   margin-bottom: 40px;
+   padding-top: 20px;
+   margin-left: 125px;
+   margin-right: 125px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid #f00;
+ }
+
+ /* END: Single Post *******/
+ .entry-content p,
+ .entry-content ul,
+ .entry-content ol,
+ .entry-content table,
+ .entry-content dl,
+ .entry-content pre,
+ .entry-content address,
+ .entry-content pre,
+ .entry-content blockquote,
+ .entry-content q,
+ .entry-content .wp-caption {
+   margin-bottom: 30px;
+ }
+
+ .entry-content a,
+ .entry-content a:hover,
+ .entry-content a:visited {
+   color: #c41424;
+ }
+
+ .entry-content ul li,
+ .entry-content ol li {
+   padding-left: 10px;
+   margin-bottom: 5px;
+ }
+
+ .entry-content li ul,
+ .entry-content li ol {
+   margin-bottom: 5px;
+ }
+
+ .entry-content ul {
+   list-style-type: disc;
+ }
+
+ .entry-content ol {
+   list-style-type: decimal;
+ }
+
+ .entry-content dt {
+   font-weight: 700;
+ }
+
+ .entry-content dd {
+   margin-bottom: 5px;
+ }
+
+ .entry-content abbr,
+ .entry-content acronym {
+   border-bottom: 1px dotted;
+ }
+
+ .entry-content ins {
+   background-color: #FFF9C0;
+   text-decoration: none;
+ }
+
+ .entry-content kbd,
+ .entry-content tt {
+   font-family: monospace;
+ }
+
+ /* =Images
+----------------------------------------------- */
+ .entry-content img {
+   max-width: 100%;
+   height: auto;
+ }
+
+ .alignleft {
+   float: left;
+ }
+
+ .alignright {
+   float: right;
+ }
+
+ .aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ img.alignleft {
+   float: left;
+   margin: 5px 20px 20px 0;
+ }
+
+ img.alignright {
+   float: right;
+   margin: 5px 0 20px 20px;
+ }
+
+ img.aligncenter {
+   display: block;
+   margin: 5px auto;
+   text-align: center;
+   clear: both;
+ }
+
+ img.alignnone {
+   margin: 5px 0;
+ }
+
+ img.size-full,
+ img.size-large,
+ img.wp-post-image {
+   max-width: 101%;
+   height: auto;
+   margin-left: 7px;
+ }
+
+ /* Image captions */
+ .wp-caption {
+   position: relative;
+   width: 1040px !important;
+   margin-left: -160px;
+ }
+
+ .wp-caption img {
+   width: 800px;
+   height: auto;
+ }
+
+ .wp-caption .wp-caption-text {
+   margin-bottom: 0;
+   padding-bottom: 20px;
+   width: 185px;
+   font-size: 14px;
+   line-height: 1.5;
+   position: absolute;
+   right: 35px;
+   bottom: 0;
+   border-bottom: 2px solid rgba(196, 20, 36, 0.5);
+ }
+
+ .wp-caption.alignright {
+   margin: 5px 0 20px 20px;
+ }
+
+ .wp-caption.alignleft {
+   margin: 5px 20px 20px 0;
+ }
+
+ /* =Tables
+----------------------------------------------- */
+ .entry-content table {
+   border-spacing: 0;
+   /* IE 5-7 */
+   border-collapse: collapse;
+ }
+
+ .entry-content table th,
+ .entry-content table thead td {
+   font-weight: bold;
+   text-align: left;
+   font-family: "Gotham-Bold", sans-serif;
+   padding-left: 7px;
+   padding-bottom: 5px;
+   border-bottom-width: 1px;
+   border-style: solid;
+   border-color: #221f1f;
+   border-color: rgba(34, 31, 31, 0.8);
+ }
+
+ .entry-content table td {
+   padding: 5px 7px;
+   font-style: italic;
+   border-bottom-width: 1px;
+   border-style: solid;
+   border-color: #221f1f;
+   border-color: rgba(34, 31, 31, 0.8);
+ }
+
+ .entry-content table td p {
+   margin-bottom: 0;
+ }
+
+ #content {
+   width: 820px;
+   float: left;
+   margin-right: 10px;
+ }
+
+ .novak-page #main {
+   padding-top: 0;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00b1d9+0,ffffff+100&0.5+0,0+100 */
+   background: #071829 url("../images/novak-bg.png") center 0 repeat-x;
+ }
+
+ .novak-page #novak-content {
+   padding-right: 20px;
+   padding-left: 25px;
+ }
+
+ .novak-page .sidebar {
+   padding-left: 0;
+   padding-right: 0;
+   position: relative;
+ }
+
+ .novak-page .sidebar:before {
+   content: "";
+   display: block;
+   width: 305px;
+   height: 1027px;
+   position: absolute;
+   top: -22px;
+   left: -36px;
+   z-index: 0;
+   background: url("../images/shadow_novak.png") 0 0 no-repeat;
+ }
+
+ .novak-page .sidebar .sidebar-top svg {
+   width: 100%;
+ }
+
+ .novak-page .sidebar .licna-karta {
+   padding-left: 20px;
+   padding-right: 5px;
+   padding-bottom: 150px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00b1d9+0,00b1d9+100&0.3+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(0, 177, 217, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(0, 177, 217, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(0, 177, 217, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d00b1d9', endColorstr='#0000b1d9', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .novak-page .entry-content {
+   padding-left: 30px;
+   padding-right: 10px;
+ }
+
+ .novak-page .bio-section {
+   margin-top: 35px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 30px;
+   position: relative;
+ }
+
+ .novak-page .bio-section:after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background-color: rgba(0, 177, 217, 0.5);
+ }
+
+ .novak-page .bio-section:last-child:after {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00b1d9+0,00b1d9+100&0.5+95,0+100 */
+   background: -moz-linear-gradient(top, rgba(0, 177, 217, 0.5) 0%, rgba(0, 177, 217, 0.5) 95%, rgba(0, 177, 217, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(0, 177, 217, 0.5) 0%, rgba(0, 177, 217, 0.5) 95%, rgba(0, 177, 217, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(0, 177, 217, 0.5) 0%, rgba(0, 177, 217, 0.5) 95%, rgba(0, 177, 217, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8000b1d9', endColorstr='#0000b1d9', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .novak-page .bio-section .mark-year-wrap {
+   position: absolute;
+   top: -28px;
+   color: #fff;
+   font-size: 24px;
+   font-family: "Gotham-Bold", sans-serif;
+   line-height: 1;
+ }
+
+ .novak-page .bio-section .mark-year-wrap:before {
+   content: "";
+   position: absolute;
+   top: -3px;
+   left: -42px;
+   width: 15px;
+   height: 15px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   border: 5px solid #00b1d9;
+ }
+
+ .novak-page .sep-text-wrap.sep-small {
+   margin-top: 25px;
+   margin-bottom: 15px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .novak-page .sep-text-wrap.sep-small:before,
+ .novak-page .sep-text-wrap.sep-small:after {
+   width: 50%;
+   background: rgba(84, 207, 255, 0.3);
+ }
+
+ .novak-page .sep-text-wrap.sep-small a {
+   display: inline-block;
+   padding: 5px 35px;
+   color: rgba(84, 207, 255, 0.7);
+   background: rgba(84, 207, 255, 0.3);
+ }
+
+ .novak-page .more-fade-wrap {
+   margin-top: -15px;
+   position: relative;
+   overflow: visible;
+ }
+
+ .novak-page .more-fade-wrap .fade {
+   display: block;
+   position: absolute;
+   top: -87px;
+   left: 0;
+   width: 100%;
+   height: 77px;
+   background-image: url("../images/shadow_athlete.png");
+   background-position: center 0;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0.3+100 */
+ }
+
+ #novak-head {
+   padding-bottom: 130px;
+   position: relative;
+ }
+
+ #novak-head .novak-bg-items {
+   display: block;
+   position: absolute;
+   top: 0;
+   right: -17px;
+   z-index: 0;
+ }
+
+ #novak-head .bio-signature {
+   position: absolute;
+   right: 0;
+   bottom: 40px;
+   z-index: 1;
+ }
+
+ #novak-head #novak-head__quote {
+   margin-top: 40px;
+ }
+
+ #novak-head #novak-head__quote .novak-head__small-quote {
+   display: block;
+   width: 54px;
+   height: 25px;
+   color: #00b1d9;
+   position: absolute;
+   top: -16px;
+   left: 50%;
+   margin-left: -19px;
+ }
+
+ #novak-head #novak-head__quote .novak-head__small-quote .n-icon {
+   width: 38px;
+ }
+
+ #novak-head #novak-head__quote .novak-head__small-quote .n-icon svg {
+   width: 100%;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner {
+   padding: 25px 40px 20px;
+   text-align: center;
+   background-color: rgba(0, 116, 145, 0.7);
+   overflow: hidden;
+   position: relative;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner:before,
+ #novak-head #novak-head__quote #novak-head__quote__inner:after {
+   content: "";
+   display: block;
+   width: 520px;
+   height: 4px;
+   background-color: #009fc4;
+   position: absolute;
+   top: 0;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner:before {
+   left: 0;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner:after {
+   right: 0;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner .novak-head__big-quote {
+   display: block;
+   width: 205px;
+   color: #00b1d9;
+   opacity: 0.25;
+   position: absolute;
+   bottom: -55px;
+   left: -40px;
+   z-index: 0;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner .novak-head__big-quote .n-icon {
+   width: 100%;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner .novak-head__big-quote .n-icon svg {
+   width: 100%;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner p {
+   font-family: 'Signika Negative Light';
+   font-size: 20px;
+   margin-bottom: 20px;
+ }
+
+ #novak-head #novak-head__quote #novak-head__quote__inner .novak-head_author {
+   color: #00b1d9;
+   font-size: 18px;
+ }
+
+ #novak-visual__top {
+   position: relative;
+ }
+
+ #novak-visual__top svg {
+   display: block;
+ }
+
+ #novak-visual__top .novak-sublink {
+   display: block;
+   width: 163px;
+   height: 163px;
+   padding: 8px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   border-style: solid;
+   border-width: 3px;
+   border-color: transparent;
+   position: absolute;
+   top: -80px;
+ }
+
+ #novak-visual__top .novak-sublink .n-icon {
+   position: absolute;
+   bottom: 40px;
+   left: 50%;
+   margin-left: -15px;
+   width: 30px;
+   color: #fff;
+ }
+
+ #novak-visual__top .novak-sublink .label {
+   position: absolute;
+   bottom: -35px;
+   left: 0;
+   width: 100%;
+   text-align: center;
+   font-size: 18px;
+   opacity: 0.5;
+ }
+
+ #novak-visual__top .novak-sublink:hover {
+   border-color: rgba(84, 207, 255, 0.2);
+ }
+
+ #novak-visual__top #novak-athlete-link {
+   left: 41px;
+ }
+
+ #novak-visual__top #novak-holist-link {
+   left: 255px;
+ }
+
+ #novak-visual__top #novak-entrepreneur-link {
+   left: 470px;
+ }
+
+ #novak-visual {
+   height: 200px;
+   position: relative;
+   overflow: visible;
+ }
+
+ #novak-visual:after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 650px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 0;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00b1d9+0,ffffff+100&0.5+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(0, 177, 217, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(0, 177, 217, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(0, 177, 217, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d00b1d9', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ #novak-visual .bio-title {
+   position: absolute;
+   top: 0;
+   left: 57px;
+   z-index: 9;
+   font-size: 40px;
+ }
+
+ #novak-visual .bio-slogan-txt {
+   position: absolute;
+   top: 55px;
+   left: 57px;
+   z-index: 9;
+   width: 500px;
+   opacity: 0.7;
+ }
+
+ #novak-visual .bio-slogan-txt p {
+   margin-bottom: 20px;
+ }
+
+ #novak-visual .bio-sidebar-img {
+   position: absolute;
+   right: 0;
+   bottom: -90px;
+   z-index: 9;
+ }
+
+ #novak-visual .bio-signature {
+   position: absolute;
+   left: 30px;
+   bottom: 10px;
+ }
+
+ #novak-quote {
+   padding-bottom: 50px;
+ }
+
+ #novak-quote blockquote {
+   padding: 20px 20px 20px 25px;
+   background-color: rgba(255, 255, 255, 0.1);
+ }
+
+ #novak-quote blockquote p:last-child {
+   margin-bottom: 0;
+ }
+
+ /* BEGIN: Sidebar *******/
+ .licna-karta,
+ .licna-karta a {
+   color: #fff;
+ }
+
+ .licna-karta li {
+   padding-left: 30px;
+   padding-top: 3px;
+   margin-bottom: 20px;
+   position: relative;
+ }
+
+ .licna-karta .label {
+   display: block;
+   margin-bottom: 2px;
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.5);
+ }
+
+ .licna-karta .lk-title {
+   margin-bottom: 20px;
+ }
+
+ .licna-karta .lk-title .lk-img {
+   margin-right: 20px;
+   width: 67px;
+   height: 67px;
+   float: left;
+   text-align: center;
+   padding-top: 6px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   border: 2px solid #00b1d9;
+ }
+
+ .licna-karta .lk-title .lk-name {
+   margin-top: 14px;
+   float: left;
+   color: #fff;
+   font-size: 20px;
+ }
+
+ .licna-karta .podaci {
+   padding-right: 15px;
+ }
+
+ .licna-karta .novak-info-list {
+   margin-bottom: 20px;
+ }
+
+ .licna-karta .n-icon {
+   display: block;
+   width: 30px;
+   color: #00b1d9;
+   position: absolute;
+   top: -3px;
+   left: -5px;
+ }
+
+ .licna-karta .novak-sidebar-separator {
+   display: block;
+   margin-bottom: 20px;
+   width: 100%;
+   height: 2px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+100&0+0,0.5+50,0+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .licna-karta .social-list {
+   margin-bottom: 15px;
+   text-align: center;
+ }
+
+ .licna-karta .social-list li {
+   display: inline-block;
+   margin-bottom: 0;
+   padding-left: 3px;
+   padding-right: 3px;
+ }
+
+ .licna-karta .social-list li a {
+   display: inline-block;
+   opacity: 0.5;
+ }
+
+ .licna-karta .social-list li a:hover {
+   opacity: 1;
+ }
+
+ .licna-karta .social-list .n-icon {
+   width: 25px;
+   position: static;
+   top: auto;
+   left: auto;
+ }
+
+ .licna-karta .podaci-link {
+   display: block;
+   margin-bottom: 20px;
+   text-align: center;
+ }
+
+ /* END: Sidebar *******/
+ .novak-athlete-page .bio-section__inner {
+   color: rgba(255, 255, 255, 0.7);
+ }
+
+ .novak-athlete-page #novak-athlete-link {
+   border-color: #fff !important;
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ .novak-athlete-page #novak-athlete-link .label {
+   opacity: 1 !important;
+ }
+
+ /* BEGIN: Novak - Holist page *******/
+ .novak-holist-page #novak-holist-link {
+   border-color: #fff !important;
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ .novak-holist-page #novak-holist-link .label {
+   opacity: 1 !important;
+ }
+
+ .novak-holist-page #novak-visual {
+   height: 1px;
+ }
+
+ .novak-holist-page #novak-visual:after {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b00f1e+0,ffffff+100&0.5+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(176, 15, 30, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(176, 15, 30, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(176, 15, 30, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73b00f1e', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .novak-holist-page #novak-visual .bio-sidebar-img {
+   right: 20px;
+   bottom: -280px;
+ }
+
+ .novak-holist-page .bio-section:after {
+   background-color: rgba(242, 112, 102, 0.5);
+ }
+
+ .novak-holist-page .bio-section:last-child:after {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27066+0,ffffff+100&0.5+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(242, 112, 102, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(242, 112, 102, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(242, 112, 102, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80f27066', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .novak-holist-page .bio-section .mark-year-wrap:before {
+   border-color: #f27066;
+ }
+
+ .novak-holist-page .news-item .news-category,
+ .novak-holist-page .news-item .news-share-count {
+   display: none;
+ }
+
+ .novak-holist-page .live-item-wrap {
+   width: 100%;
+   padding-left: 0;
+   padding-right: 0;
+   float: none;
+ }
+
+ .novak-holist-page .live-item-wrap .live-item-content {
+   background-color: #f27066;
+   background-color: rgba(242, 112, 102, 0.3);
+   border-color: #f27066;
+ }
+
+ .novak-holist-page .live-item-wrap .live-item-content:before {
+   border-color: transparent #f27066 transparent transparent;
+ }
+
+ .novak-holist-page .live-item-wrap .live-via {
+   opacity: 0.5 !important;
+ }
+
+ .novak-holist-page .live-item-wrap .user-name {
+   font-family: "Gotham-Bold", sans-serif;
+   font-size: 20px;
+ }
+
+ .novak-holist-page .live-item-wrap .n-icon {
+   color: #f27066 !important;
+ }
+
+ .novak-holist-page .sep-text-wrap.sep-small {
+   overflow: hidden;
+ }
+
+ .novak-holist-page .sep-text-wrap.sep-small:before,
+ .novak-holist-page .sep-text-wrap.sep-small:after {
+   background: rgba(242, 112, 102, 0.2);
+ }
+
+ .novak-holist-page .sep-text-wrap.sep-small a {
+   color: rgba(242, 112, 102, 0.7);
+   background: rgba(242, 112, 102, 0.2);
+ }
+
+ .novak-holist-page .sidebar {
+   margin-top: 180px;
+ }
+
+ .novak-holist-page .sidebar .licna-karta {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f53f3f+0,00b1d9+100&0.3+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(245, 63, 63, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(245, 63, 63, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(245, 63, 63, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4df53f3f', endColorstr='#0000b1d9', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .novak-holist-page .sidebar .licna-karta .lk-title .lk-img {
+   border-color: #f27066;
+ }
+
+ .novak-holist-page .sidebar .licna-karta .lk-title .lk-name {
+   text-transform: none;
+   font-size: 18px;
+ }
+
+ .novak-holist-page .sidebar .licna-karta .n-icon {
+   color: #f27066;
+ }
+
+ .novak-holist-page .sidebar .licna-karta .podaci-link {
+   color: #f27066;
+ }
+
+ .novak-holist-page .sidebar .licna-karta .podaci--fondacija .lk-email a {
+   font-size: 13px;
+ }
+
+ .novak-holist-page .sidebar .licna-karta .podaci--organizacija .lk-email a {
+   font-size: 14px;
+ }
+
+ .novak-holist-page .sidebar .licna-karta .podaci--organizacija .soon {
+   margin-top: 10px;
+   display: inline-block;
+   padding: 3px 5px;
+   text-transform: uppercase;
+   font-size: 12px;
+   color: #f27066;
+   border: 1px solid #f27066;
+ }
+
+ /* END: Novak - Holist page *******/
+ /* BEGIN: Novak - Entrepreneur page *******/
+ .novak-entrepreneur-page #novak-entrepreneur-link {
+   border-color: #fff !important;
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ .novak-entrepreneur-page #novak-entrepreneur-link .label {
+   opacity: 1 !important;
+ }
+
+ .novak-entrepreneur-page #novak-visual {
+   height: 1px;
+ }
+
+ .novak-entrepreneur-page #novak-visual:after {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0180c4+0,ffffff+100&0.3+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(1, 128, 196, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(1, 128, 196, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(1, 128, 196, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d0180c4', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .novak-entrepreneur-page #novak-visual .bio-sidebar-img {
+   right: 20px;
+   bottom: -280px;
+ }
+
+ .novak-entrepreneur-page .sidebar {
+   margin-top: 180px;
+ }
+
+ .novak-entrepreneur-page .sidebar .licna-karta {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0180c4+0,00b1d9+100&0.3+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(1, 128, 196, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(1, 128, 196, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(1, 128, 196, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d0180c4', endColorstr='#0000b1d9', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .novak-entrepreneur-page .live-item-wrap {
+   width: 100%;
+   padding-left: 0;
+   padding-right: 0;
+   float: none;
+ }
+
+ .novak-entrepreneur-page .live-item-wrap .live-item-content {
+   background-color: #00A5E4;
+   background-color: rgba(0, 165, 228, 0.3);
+   border-color: #00A5E4;
+ }
+
+ .novak-entrepreneur-page .live-item-wrap .live-item-content:before {
+   border-color: transparent #00A5E4 transparent transparent;
+ }
+
+ .novak-entrepreneur-page .live-item-wrap .live-via {
+   opacity: 0.5;
+ }
+
+ .novak-entrepreneur-page .live-item-wrap .user-name {
+   font-family: "Gotham-Bold", sans-serif;
+   font-size: 20px;
+ }
+
+ .novak-entrepreneur-page .live-item-wrap .n-icon {
+   color: #00A5E4 !important;
+ }
+
+ .novak-entrepreneur-page .licna-karta {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f53f3f+0,00b1d9+100&0.3+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(245, 63, 63, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(245, 63, 63, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(245, 63, 63, 0.3) 0%, rgba(0, 177, 217, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4df53f3f', endColorstr='#0000b1d9', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .novak-entrepreneur-page .licna-karta .lk-title .lk-img {
+   border-color: #00A5E4;
+ }
+
+ .novak-entrepreneur-page .licna-karta .lk-title .lk-name {
+   text-transform: none;
+   font-size: 18px;
+ }
+
+ .novak-entrepreneur-page .licna-karta .n-icon {
+   color: #00A5E4;
+ }
+
+ .novak-entrepreneur-page .licna-karta .podaci-link {
+   color: #00A5E4;
+ }
+
+ .novak-entrepreneur-page .licna-karta .podaci--restoran .lk-email a {
+   font-size: 14px;
+ }
+
+ /* END: Novak - Entrepreneur page *******/
+ #novak-holist-link,
+ #novak-entrepreneur-link {
+   pointer-events: none;
+ }
+
+ body.tour-page #main {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,ffffff+100&0.5+0,0+100 */
+   background: #071829 url("../images/tennis-default-bg.png") center 0 repeat-x;
+ }
+
+ body.tour-page .sidebar__inner {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,ffffff+100&0.2+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3354cfff', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .tour-box {
+   margin-bottom: 10px;
+   position: relative;
+ }
+
+ .tour-box:before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+ }
+
+ .tour-box,
+ .tour-box a {
+   color: #fff;
+ }
+
+ .tour-box--padding {
+   padding: 25px;
+ }
+
+ .tour-box--blue {
+   background-color: rgba(1, 128, 196, 0.4);
+ }
+
+ .tour-box--blue:before {
+   background-color: #2d86ae;
+ }
+
+ .tour-results-list li {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 25px;
+ }
+
+ .tour-results-list li:nth-child(odd) {
+   background-color: rgba(255, 255, 255, 0.1);
+ }
+
+ /* BEGIN: Tour */
+ #tour-current-tournament {
+   padding-top: 20px;
+   padding-left: 30px;
+   padding-bottom: 10px;
+ }
+
+ #tour-current-tournament .tour-days {
+   visibility: hidden;
+ }
+
+ #tour-current-tournament .tour-listing {
+   float: left;
+ }
+
+ #tour-current-tournament .tour-listing li {
+   margin-bottom: 10px;
+ }
+
+ #tour-current-tournament #tour-live-results {
+   float: right;
+   width: 530px;
+ }
+
+ #tour-current-tournament #tour-live-results .results-heading {
+   padding-top: 0;
+ }
+
+ #tour-current-tournament #tour-live-results #live-results__inner .player-sets {
+   font-size: 18px;
+ }
+
+ #tour-current-tournament #tour-live-results #live-results__inner .player-sets span {
+   width: 40px;
+ }
+
+ #tour-current-tournament #tour-live-results #live-results__inner .player-sets span:nth-child(odd) {
+   background-color: rgba(255, 255, 255, 0.1);
+ }
+
+ #tour-current-tournament #tour-live-results #live-results__inner .player-sets span.set-won {
+   font-size: 18px;
+ }
+
+ #tour-current-tournament #tour-live-results #live-results__inner .results-player-wrap {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,54cfff+100&0+0,0.6+100 */
+   background: -moz-linear-gradient(left, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.6) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.6) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.6) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0054cfff', endColorstr='#9954cfff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #tour-current-tournament.error-content {
+   padding-top: 30px;
+   height: 420px;
+ }
+
+ #tour-current-tournament.error-content .error-thumb {
+   margin-bottom: 40px;
+ }
+
+ #tour-current-tournament .tournament-title .tournament-date,
+ #tour-scheduled-tournament .tournament-title .tournament-date {
+   display: block;
+   font-size: 18px;
+   color: #54cfff;
+   opacity: 0.6;
+   font-family: "Signika Negative", sans-serif;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   z-index: 1;
+ }
+
+ .tour-box .tournament-content {
+   font-family: "Signika Negative Light", sans-serif;
+   padding-right: 20px;
+   margin-bottom: 15px;
+ }
+
+ .tour-box .tournament-content p:last-child {
+   margin-bottom: 0;
+ }
+
+ .tour-days {
+   display: block;
+   font-size: 16px;
+   color: #54cfff;
+   opacity: 0.6;
+ }
+
+ .tournament-title {
+   margin-bottom: 15px;
+ }
+
+ .tour-listing li {
+   height: 30px;
+   line-height: 30px;
+   margin-bottom: 5px;
+ }
+
+ .tour-listing .tourl-pts strong {
+   text-transform: uppercase;
+ }
+
+ .tour-listing .n-icon {
+   color: #54cfff;
+   width: 30px;
+   margin-right: 15px;
+ }
+
+ .tour-window-main {
+   float: right;
+ }
+
+ .tour-window-main .player-result {
+   float: left;
+ }
+
+ .tour-window-main .result-final {
+   clear: both;
+ }
+
+ #tour-schedule,
+ #tour-results {
+   height: 275px;
+ }
+
+ #tour-schedule,
+ #tour-schedule a,
+ #tour-results,
+ #tour-results a {
+   color: #fff;
+ }
+
+ #tour-schedule {
+   background-color: rgba(0, 165, 228, 0.3);
+   position: relative;
+ }
+
+ #tour-schedule:after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 2;
+   width: 4px;
+   height: 100%;
+   background-color: rgba(0, 165, 228, 0.6);
+ }
+
+ #tour-schedule.surface-clay:after {
+   background-color: rgba(207, 73, 16, 0.6);
+ }
+
+ #tour-schedule.surface-grass:after {
+   background-color: rgba(87, 140, 32, 0.6);
+ }
+
+ #tour-schedule .tour-schedule-title {
+   margin-bottom: 0;
+   padding-top: 15px;
+   padding-left: 25px;
+   height: 70px;
+   line-height: 1;
+   background-color: rgba(0, 0, 0, 0.2);
+   position: relative;
+   z-index: 2;
+ }
+
+ #tour-schedule .tour-schedule-title span {
+   display: block;
+   font-size: 15px;
+   text-transform: uppercase;
+   opacity: 0.6;
+ }
+
+ #tour-schedule #toursched-info {
+   padding-top: 10px;
+   padding-left: 25px;
+   position: relative;
+   z-index: 2;
+ }
+
+ #tour-schedule .tournament-img {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 0;
+   width: 300px;
+   height: 100%;
+   overflow: hidden;
+   text-align: right;
+ }
+
+ #tour-schedule .tournament-img img {
+   max-width: none;
+   height: 100%;
+   width: auto;
+ }
+
+ #tour-schedule .next-tournaments {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   font-size: 15px;
+   text-align: center;
+   color: #54cfff;
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ #tour-schedule .n-icon {
+   color: #54cfff;
+   width: 30px;
+   margin-right: 15px;
+ }
+
+ #tour-schedule .n-icon svg {
+   display: block;
+ }
+
+ #tour-schedule.error-content {
+   padding-top: 30px;
+   background-color: #024871;
+ }
+
+ #tour-schedule.error-content .error-thumb {
+   margin-bottom: 20px;
+ }
+
+ #tour-results {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,ffffff+100&0.3+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d54cfff', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+   position: relative;
+ }
+
+ #tour-results .tour-results-title {
+   margin-bottom: 0;
+   padding-left: 25px;
+   height: 75px;
+   line-height: 75px;
+   text-transform: uppercase;
+ }
+
+ #tour-results .tour-results-list,
+ #tour-results .tour-results-list a {
+   color: rgba(255, 255, 255, 0.8) !important;
+ }
+
+ #tour-results .all-results {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   font-size: 15px;
+   text-align: center;
+   color: #54cfff;
+   background-color: rgba(0, 0, 0, 0.1);
+ }
+
+ .tour-record {
+   margin-top: 10px;
+   padding: 15px 45px 15px 55px;
+ }
+
+ .tour-record,
+ .tour-record a {
+   color: #fff;
+ }
+
+ .tour-record .tour-record-box {
+   height: 130px;
+   float: left;
+ }
+
+ .tour-record .cs-label {
+   display: block;
+   font-size: 22px;
+   font-weight: 400;
+   color: #f27066;
+ }
+
+ .tour-record .cs-icon {
+   display: inline-block;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+ .tour-record .cs-num {
+   font-family: "Gotham-Bold", sans-serif;
+ }
+
+ .tour-record .tour-record-box--h2h {
+   width: 310px;
+   padding-top: 15px;
+ }
+
+ .tour-record .tour-record-box--h2h>span {
+   float: left;
+ }
+
+ .tour-record .tour-record-box--h2h>span.cs-icon {
+   padding-top: 13px;
+ }
+
+ .tour-record .tour-record-box--h2h>span.cs-icon .n-icon {
+   width: 60px;
+ }
+
+ .tour-record .cs-won-num,
+ .tour-record .cs-lost-num {
+   display: inline-block;
+   font-size: 48px;
+   text-align: center;
+ }
+
+ .tour-record .tour-record-box--tournaments {
+   width: 450px;
+   text-align: center;
+   padding-top: 20px;
+   position: relative;
+ }
+
+ .tour-record .tour-record-box--tournaments:before,
+ .tour-record .tour-record-box--tournaments:after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   width: 2px;
+   height: 100%;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27066+0,2989d8+50,f27066+50,f27066+100&0+0,0.5+50,0+100 */
+   background: -moz-linear-gradient(top, rgba(242, 112, 102, 0) 0%, rgba(242, 112, 102, 0.5) 50%, rgba(242, 112, 102, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(242, 112, 102, 0) 0%, rgba(242, 112, 102, 0.5) 50%, rgba(242, 112, 102, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(242, 112, 102, 0) 0%, rgba(242, 112, 102, 0.5) 50%, rgba(242, 112, 102, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f27066', endColorstr='#00f27066', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .tour-record .tour-record-box--tournaments:before {
+   left: 0;
+ }
+
+ .tour-record .tour-record-box--tournaments:after {
+   right: 0;
+ }
+
+ .tour-record .cs-stitles {
+   padding-left: 10px;
+   padding-right: 10px;
+   display: inline-block;
+   font-size: 40px;
+   text-align: center;
+ }
+
+ .tour-record .tour-record-box--gs {
+   text-align: right;
+   width: 235px;
+   padding-top: 10px;
+ }
+
+ .tour-record .tour-record-box--gs>span {
+   display: block;
+   margin-bottom: 0;
+ }
+
+ .tour-record .tour-record-box--gs .cs-label {
+   padding-top: 8px;
+   display: inline-block;
+   font-size: 16px;
+ }
+
+ .tour-record .tour-record-box--gs .n-icon {
+   vertical-align: middle;
+   width: 30px;
+ }
+
+ .tour-record .tour-record-box--gs .n-icon svg {
+   display: block;
+ }
+
+ .tour-record .tour-record-box--gs .cs-gsnum,
+ .tour-record .tour-record-box--gs .cs-dcnum,
+ .tour-record .tour-record-box--gs .cs-omnum {
+   font-size: 24px;
+   font-family: "Gotham-Bold", sans-serif;
+ }
+
+ .tour-record .n-icon {
+   color: #fff;
+   opacity: 0.5;
+ }
+
+ #tour-career-record {
+   background-color: #ed1c2e;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed1c2e+0,ed1c2e+50,ed1c2e+100&0.2+0,0.4+50,0.2+100 */
+   background: -moz-linear-gradient(left, rgba(237, 28, 46, 0.2) 0%, rgba(237, 28, 46, 0.4) 50%, rgba(237, 28, 46, 0.2) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(237, 28, 46, 0.2) 0%, rgba(237, 28, 46, 0.4) 50%, rgba(237, 28, 46, 0.2) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(237, 28, 46, 0.2) 0%, rgba(237, 28, 46, 0.4) 50%, rgba(237, 28, 46, 0.2) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ed1c2e', endColorstr='#33ed1c2e', GradientType=1);
+   /* IE6-9 */
+   border-bottom: 4px solid #ed1c2e;
+   border-bottom: 4px solid rgba(237, 28, 46, 0.5);
+ }
+
+ #tour-career-record .cr-title {
+   margin-bottom: 10px;
+   text-align: center;
+   color: #f27066;
+   text-transform: uppercase;
+ }
+
+ #tour-career-record .tour-record-box--gs {
+   padding-bottom: 0;
+ }
+
+ .tour-record--year {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0180c4+0,0180c4+50,0180c4+100&0.2+0,0.4+50,0.2+100 */
+   background: -moz-linear-gradient(left, rgba(1, 128, 196, 0.2) 0%, rgba(1, 128, 196, 0.4) 50%, rgba(1, 128, 196, 0.2) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(1, 128, 196, 0.2) 0%, rgba(1, 128, 196, 0.4) 50%, rgba(1, 128, 196, 0.2) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(1, 128, 196, 0.2) 0%, rgba(1, 128, 196, 0.4) 50%, rgba(1, 128, 196, 0.2) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#330180c4', endColorstr='#330180c4', GradientType=1);
+   /* IE6-9 */
+   border-bottom: 4px solid #54cfff;
+   border-bottom: 4px solid rgba(84, 207, 255, 0.5);
+ }
+
+ .tour-record--year .ys-title {
+   margin-bottom: 10px;
+   text-align: center;
+   color: #54cfff;
+   text-transform: uppercase;
+ }
+
+ .tour-record--year .ys-title span {
+   font-family: "Gotham-Bold", sans-serif;
+   font-size: 18px;
+ }
+
+ .tour-record--year .cs-label {
+   color: #54cfff;
+ }
+
+ .tour-record--year .tour-record-box--tournaments:before,
+ .tour-record--year .tour-record-box--tournaments:after {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,2989d8+50,54cfff+50,54cfff+100&0+0,0.5+50,0+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.5) 50%, rgba(84, 207, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.5) 50%, rgba(84, 207, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.5) 50%, rgba(84, 207, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0054cfff', endColorstr='#0054cfff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .tour-record--year .tour-record-box--gs {
+   padding-top: 45px;
+ }
+
+ .tour-record--year .tour-record-box--gs .cs-gsnum {
+   display: inline-block;
+   float: right;
+   padding-left: 5px;
+ }
+
+ /* END: Tour */
+ /* BEGIN: Tour - Schedule */
+ .schedule-box--big {
+   position: relative;
+   padding-top: 20px;
+ }
+
+ .schedule-box--big .tournament-image {
+   position: absolute;
+   bottom: 25px;
+   right: 25px;
+   width: 350px;
+ }
+
+ .schedule-box--big .tournament-image .tour-logo {
+   display: block;
+   width: 115px;
+   height: 115px;
+   padding-top: 6px;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   margin-top: -57px;
+   margin-left: -57px;
+   border: 2px solid #fff;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   overflow: hidden;
+   text-align: center;
+ }
+
+ .schedule-box--big .tournament-image .tour-logo .tour-logo__inner {
+   display: inline-block;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 100px;
+   height: 100px;
+ }
+
+ .schedule-box--big .tournament-image .tour-logo .tour-logo__inner img {
+   width: 100%;
+   height: auto;
+ }
+
+ .schedule-box--big .tour-listing {
+   float: left;
+   margin-top: 10px;
+ }
+
+ .schedule-box--small {
+   padding-top: 20px;
+   position: relative;
+ }
+
+ .schedule-box--small .tour-days {
+   margin-bottom: 5px;
+   color: #fff;
+   color: rgba(255, 255, 255, 0.6);
+ }
+
+ .schedule-box--small .tour-listing li .n-icon {
+   margin-right: 5px;
+ }
+
+ /* END: Tour - Schedule */
+ /* BEGIN: Tour - Stats */
+ .page-template-template-tour-stats #tour-career-record {
+   margin-top: 0;
+   padding-bottom: 25px;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .cs-label {
+   font-size: 17px;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--h2h {
+   width: 320px;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--tournaments {
+   width: 400px;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--tournaments:after {
+   display: none;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs {
+   float: none;
+   clear: both;
+   width: 100%;
+   height: auto;
+   text-align: center;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs>span {
+   margin-bottom: 0;
+   float: left;
+   width: 33%;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs>span .cs-label {
+   font-size: 17px;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs>span .cs-gsnum,
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs>span .cs-dcnum,
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs>span .cs-omnum {
+   font-size: 28px;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs>span .n-icon {
+   width: 40px;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs .cs-gstitles {
+   text-align: left;
+ }
+
+ .page-template-template-tour-stats #tour-career-record .tour-record-box--gs .cs-omtitle {
+   text-align: right;
+ }
+
+ .page-template-template-tour-stats .tour-record--year {
+   position: relative;
+   padding-bottom: 50px;
+   padding-left: 40px;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .tour-record-box--h2h {
+   width: 235px;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .tour-record-box--tournaments {
+   padding-top: 25px;
+   width: 320px;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .tour-record-box--tournaments:after {
+   display: none;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .tour-record-box--gs {
+   padding-top: 25px;
+   width: 155px;
+   text-align: center;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .tour-record-box--gs .cs-gsnum {
+   display: inline;
+   float: none;
+   padding-left: 0;
+   font-size: 38px;
+   font-family: "Signika Negative", sans-serif;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .tour-record-box--gs .cs-gsnum .n-icon {
+   width: 40px;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .tour-record-box--gs .cs-label {
+   padding-top: 0;
+   display: block;
+   font-size: 17px;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .cs-label {
+   font-size: 17px;
+ }
+
+ .page-template-template-tour-stats .tour-record--year .cs-stitles,
+ .page-template-template-tour-stats .tour-record--year .cs-gstitles {
+   font-size: 38px;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+
+ .page-template-template-tour-stats #tour-carousel-dots {
+   margin-top: -45px;
+   position: relative;
+   z-index: 9;
+   text-align: center;
+ }
+
+ .page-template-template-tour-stats #tour-carousel-dots .active {
+   background-color: #328ab0;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats {
+   margin-bottom: 45px;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap {
+   width: 560px;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   z-index: 9;
+   margin-top: -45px;
+   height: 40px;
+   padding-left: 40px;
+   padding-right: 40px;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .owl-carousel-dots-wrap__inner {
+   overflow: hidden;
+   position: relative;
+   height: 100%;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .owl-carousel-dots-wrap__inner li {
+   float: left;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .dots-prev,
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .dots-next {
+   display: block;
+   width: 20px;
+   height: 35px;
+   line-height: 35px;
+   text-align: center;
+   position: absolute;
+   top: 0;
+   opacity: 0.5;
+   cursor: pointer;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .dots-prev:hover,
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .dots-next:hover {
+   opacity: 1;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .dots-prev .n-icon,
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .dots-next .n-icon {
+   width: 20px;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .dots-prev {
+   left: 0;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats .owl-carousel-dots-wrap .dots-next {
+   right: 0;
+ }
+
+ .page-template-template-tour-stats .tour-single-stats #tour-carousel-dots {
+   margin-top: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+
+ .owl-carousel-dots li {
+   display: inline-block;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   width: 60px;
+   text-align: center;
+ }
+
+ .owl-carousel-dots li:hover {
+   cursor: pointer;
+ }
+
+ .owl-carousel-dots li.active {
+   font-weight: 600;
+ }
+
+ .gsstats-big {
+   padding-top: 25px;
+   padding-bottom: 25px;
+   text-align: center;
+   background-color: rgba(84, 207, 255, 0.2);
+ }
+
+ .gsstats-big h4 {
+   font-size: 22px;
+   margin-bottom: 20px;
+ }
+
+ .gsstats-big,
+ .gsstats-big a {
+   color: #fff;
+ }
+
+ .gsyears {
+   margin-top: 65px;
+   padding-left: 30px;
+   padding-right: 30px;
+   float: left;
+   font-family: "Gotham-Bold", sans-serif;
+ }
+
+ .gsyears li {
+   height: 50px;
+   line-height: 50px;
+ }
+
+ .gslist {
+   float: left;
+   width: 230px;
+   margin-right: 16px;
+ }
+
+ .gslist li {
+   height: 50px;
+   line-height: 50px;
+   background-color: rgba(255, 255, 255, 0.1);
+   font-size: 18px;
+ }
+
+ .gslist li.gsl-striped {
+   background-color: rgba(0, 89, 156, 0.1);
+ }
+
+ .gslist li.gsl-title {
+   margin-bottom: 15px;
+   background-color: rgba(180, 190, 255, 0.2);
+   font-family: "Gotham-Bold", sans-serif;
+   font-size: 19px;
+ }
+
+ .gslist li.gsl-title.gsl-rg,
+ .gslist li.gsl-title.gsl-uso {
+   background-color: rgba(0, 89, 156, 0.7);
+ }
+
+ .tour-tournament-box {
+   margin-bottom: 25px;
+   padding-top: 15px;
+   padding-left: 0;
+   padding-bottom: 0;
+   background-color: rgba(0, 165, 228, 0.2);
+ }
+
+ .tour-tournament-box:before {
+   display: none;
+ }
+
+ .tour-tournament-box .tournament-title {
+   padding-left: 25px;
+   position: relative;
+ }
+
+ .tour-tournament-box .tournament-title .tournament-date,
+ .tour-tournament-box .tournament-title .tournament-meta {
+   display: block;
+   font-family: "Signika Negative", sans-serif;
+ }
+
+ .tour-tournament-box .tournament-title .tournament-date {
+   margin-bottom: 0;
+   color: #54cfff;
+   font-size: 16px;
+ }
+
+ .tour-tournament-box .tournament-title .tournament-meta {
+   position: absolute;
+   top: 0;
+   right: 20px;
+   text-align: right;
+   font-size: 17px;
+ }
+
+ .tour-tournament-box .tournament-title .tournament-meta span {
+   display: block;
+ }
+
+ .tour-tournament-box .tournament-title .tournament-meta .tournament-type {
+   color: #54cfff;
+ }
+
+ .tour-tournament-box .tour-results-list {
+   padding-bottom: 4px;
+   position: relative;
+ }
+
+ .tour-tournament-box .tour-results-list:before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   background-color: rgba(84, 207, 255, 0.5);
+ }
+
+ .tour-tournament-box .tour-results-list li {
+   padding-top: 15px;
+   padding-bottom: 13px;
+   padding-left: 0;
+   font-size: 18px;
+ }
+
+ .tour-tournament-box .tour-results-list .rll-icon,
+ .tour-tournament-box .tour-results-list .rll-stage,
+ .tour-tournament-box .tour-results-list .rll-name,
+ .tour-tournament-box .tour-results-list .rll-rank,
+ .tour-tournament-box .tour-results-list .rll-sets {
+   float: left;
+ }
+
+ .tour-tournament-box .tour-results-list .rll-name,
+ .tour-tournament-box .tour-results-list .rll-rank,
+ .tour-tournament-box .tour-results-list .rll-sets {
+   opacity: 0.8;
+ }
+
+ .tour-tournament-box .tour-results-list .rll-icon {
+   padding-left: 25px;
+   width: 65px;
+   text-align: left;
+ }
+
+ .tour-tournament-box .tour-results-list .rll-icon .n-icon {
+   width: 20px;
+   color: #fff;
+   opacity: 0.5;
+ }
+
+ .tour-tournament-box .tour-results-list .rll-stage {
+   width: 70px;
+   text-align: left;
+ }
+
+ .tour-tournament-box .tour-results-list .rll-name {
+   width: 245px;
+   text-align: left;
+ }
+
+ .tour-tournament-box .tour-results-list .rll-rank {
+   width: 220px;
+   text-align: left;
+ }
+
+ .tour-tournament-box .tour-results-list .rll-sets {
+   width: 195px;
+   text-align: right;
+ }
+
+ .tour-tournament-box .rl-footer {
+   height: 45px;
+   line-height: 45px;
+   padding-left: 15px;
+ }
+
+ .tour-tournament-box .rl-footer a {
+   display: inline-block;
+   margin-right: 40px;
+   color: #54cfff;
+ }
+
+ .tour-tournament-box .rl-footer .n-icon {
+   margin-top: -4px;
+   vertical-align: middle;
+   width: 35px;
+ }
+
+ .tour-tournament-box .rl-footer .rl-news .n-icon {
+   margin-top: -2px;
+   margin-right: 4px;
+   width: 25px;
+ }
+
+ .resultsvs {
+   margin-top: 25px;
+   padding-top: 30px;
+   background-color: rgba(0, 89, 156, 0.2);
+ }
+
+ .resultsvs .resultsvs-title {
+   text-align: center;
+   margin-bottom: 15px;
+ }
+
+ .resultsvs .rlvs-list .rlvs-column {
+   opacity: 0.3;
+ }
+
+ .resultsvs .rlvs-list li {
+   height: 50px;
+   line-height: 50px;
+   color: rgba(255, 255, 255, 0.7);
+ }
+
+ .resultsvs .rlvs-list li.li-stripe {
+   background-color: rgba(0, 89, 156, 0.3);
+ }
+
+ .resultsvs .rlvs-list .rlvs-tournament,
+ .resultsvs .rlvs-list .rlvs-phase,
+ .resultsvs .rlvs-list .rlvs-wdl,
+ .resultsvs .rlvs-list .rlvs-player,
+ .resultsvs .rlvs-list .rlvs-sets {
+   float: left;
+ }
+
+ .resultsvs .rlvs-list .rlvs-tournament {
+   width: 320px;
+   padding-left: 30px;
+ }
+
+ .resultsvs .rlvs-list .rlvs-phase {
+   width: 170px;
+ }
+
+ .resultsvs .rlvs-list .rlvs-wdl {
+   width: 85px;
+ }
+
+ .resultsvs .rlvs-list .rlvs-player {
+   width: 300px;
+ }
+
+ .resultsvs .rlvs-list .rlvs-sets {
+   padding-right: 30px;
+   text-align: right;
+   width: 225px;
+ }
+
+ .resultsvs .rsvs-footer {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   clear: both;
+   text-align: center;
+ }
+
+ .resultsvs .rsvs-footer #rsvs-years li {
+   display: inline-block;
+ }
+
+ .resultsvs #resultsvs-carousel-dots li.active {
+   background-color: #033f6e;
+ }
+
+ /* END: Tour - Stats */
+ /* BEGIN: Tour - Titles */
+ .titles-item {
+   margin-bottom: 25px;
+ }
+
+ .titles-item .n-icon {
+   margin-right: 10px;
+   color: #54cfff;
+ }
+
+ .titles-item .n-icon svg {
+   display: block;
+ }
+
+ .titles-photo {
+   margin-right: 15px;
+   float: left;
+   width: 440px;
+   position: relative;
+ }
+
+ .titles-photo:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   height: 4px;
+   background-color: rgba(84, 207, 255, 0.5);
+ }
+
+ .titles-desc {
+   float: left;
+   padding-top: 5px;
+   width: 365px;
+ }
+
+ .titles-desc,
+ .titles-desc a {
+   color: #fff;
+ }
+
+ .titles-desc .titles-title {
+   margin-bottom: 25px;
+ }
+
+ .titles-desc .titles-date,
+ .titles-desc .titles-location {
+   margin-bottom: 5px;
+   display: block;
+   height: 30px;
+   line-height: 30px;
+ }
+
+ .titles-desc .titles-date,
+ .titles-desc .titles-location,
+ .titles-desc .titles-content {
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 14px;
+ }
+
+ .titles-desc .titles-content {
+   margin-top: 15px;
+ }
+
+ .titles-item--mini .titles-photo {
+   width: 264px;
+ }
+
+ /* END: Tour - Titles */
+ .career-stats {
+   margin-bottom: 10px;
+   border-bottom: 4px solid #942a41;
+ }
+
+ /* BEGIN: Tour Sidebar */
+ #tour-sidebar .sidebar__inner,
+ #photo-sidebar .sidebar__inner,
+ #timeline-sidebar .sidebar__inner,
+ #video-sidebar .sidebar__inner {
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0;
+ }
+
+ #tour-sidebar .menu>li,
+ #photo-sidebar .menu>li,
+ #timeline-sidebar .menu>li,
+ #video-sidebar .menu>li {
+   margin-bottom: 5px;
+ }
+
+ #tour-sidebar .menu>li>span,
+ #photo-sidebar .menu>li>span,
+ #timeline-sidebar .menu>li>span,
+ #video-sidebar .menu>li>span {
+   display: block;
+   padding: 9px 20px 7px 20px;
+ }
+
+ #tour-sidebar .menu>li.current-menu-item,
+ #photo-sidebar .menu>li.current-menu-item,
+ #timeline-sidebar .menu>li.current-menu-item,
+ #video-sidebar .menu>li.current-menu-item {
+   border-right: 5px solid #54cfff;
+ }
+
+ #tour-sidebar .menu>li.current-menu-item>span,
+ #photo-sidebar .menu>li.current-menu-item>span,
+ #timeline-sidebar .menu>li.current-menu-item>span,
+ #video-sidebar .menu>li.current-menu-item>span {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,54cfff+100&0+0,0.3+100 */
+   background: -moz-linear-gradient(left, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.3) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.3) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.3) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0054cfff', endColorstr='#4d54cfff', GradientType=1);
+   /* IE6-9 */
+   position: relative;
+   overflow: hidden;
+ }
+
+ #tour-sidebar .menu>li.current-menu-item>span>a,
+ #photo-sidebar .menu>li.current-menu-item>span>a,
+ #timeline-sidebar .menu>li.current-menu-item>span>a,
+ #video-sidebar .menu>li.current-menu-item>span>a {
+   color: #fff;
+ }
+
+ #tour-sidebar .menu>li.current-menu-item>span .n-icon-chevron-right,
+ #photo-sidebar .menu>li.current-menu-item>span .n-icon-chevron-right,
+ #timeline-sidebar .menu>li.current-menu-item>span .n-icon-chevron-right,
+ #video-sidebar .menu>li.current-menu-item>span .n-icon-chevron-right {
+   position: absolute;
+   top: 7px;
+   left: -7px;
+   color: #54cfff;
+ }
+
+ #tour-sidebar .widget,
+ #photo-sidebar .widget,
+ #timeline-sidebar .widget,
+ #video-sidebar .widget {
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+ .sidebar-submenu {
+   padding-top: 10px;
+   padding-bottom: 5px;
+   font-family: "Gotham-Bold", sans-serif;
+   background-color: rgba(84, 207, 255, 0.2);
+ }
+
+ .sidebar-submenu li {
+   padding-top: 5px;
+   padding-bottom: 4px;
+   padding-left: 20px;
+   margin-bottom: 0;
+ }
+
+ .sidebar-submenu li.current-menu-subitem {
+   color: #fff;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,54cfff+100&0.2+0,0+100 */
+   background: -moz-linear-gradient(left, rgba(84, 207, 255, 0.2) 0%, rgba(84, 207, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(84, 207, 255, 0.2) 0%, rgba(84, 207, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(84, 207, 255, 0.2) 0%, rgba(84, 207, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3354cfff', endColorstr='#0054cfff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ /* END: Tour Sidebar */
+ body.photo-page #main {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,ffffff+100&0.5+0,0+100 */
+   background: #071829 url("../images/photo-bg.png") center 0 repeat-x;
+ }
+
+ body.photo-page .sidebar__inner {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,ffffff+100&0.2+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3354cfff', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ body.photo-page .sidebar__inner .n-icon {
+   color: #54cfff;
+ }
+
+ .photo-social {
+   height: 50px;
+   line-height: 50px;
+   background-color: rgba(255, 255, 255, 0.2);
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+28,ffffff+100&0+0,0.2+28,0.2+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 28%, rgba(255, 255, 255, 0.2) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 28%, rgba(255, 255, 255, 0.2) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 28%, rgba(255, 255, 255, 0.2) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#33ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .photo-social .photo-social-label {
+   margin-left: 5px;
+   opacity: 0.5;
+   color: #fff;
+ }
+
+ /* BEGIN: Album generic preview */
+ .album-item .album-preview-img {
+   display: block;
+   margin-bottom: 4px;
+   overflow: hidden;
+ }
+
+ .album-item .album-preview-img img {
+   width: 100%;
+   height: auto;
+ }
+
+ .album-item .album-preview-thumb-wrap {
+   margin-left: -2px;
+   margin-right: -2px;
+ }
+
+ .album-item .album-preview-thumb {
+   float: left;
+   width: 25%;
+   height: 65px;
+   line-height: 65px;
+   text-align: center;
+   overflow: hidden;
+   padding-left: 2px;
+   padding-right: 2px;
+ }
+
+ .album-item .album-preview-thumb .album-preview-thumb__inner {
+   display: block;
+   height: 100%;
+   position: relative;
+   background-size: cover;
+ }
+
+ .album-item .album-preview-thumb .album-preview-thumb-link {
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+
+ .album-item .album-preview-thumb:hover .album-preview-thumb-link {
+   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   -moz-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+
+ .album-item .album-preview-thumb .album-count {
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   color: #fff;
+   font-family: "Gotham-Bold", sans-serif;
+   font-size: 24px;
+   background-color: rgba(84, 207, 255, 0.5);
+ }
+
+ .album-item .album-preview-thumb .album-count span {
+   opacity: 0.6;
+ }
+
+ .album-item .album-content {
+   clear: both;
+   color: #fff;
+   background-color: #00a5e4;
+   position: relative;
+ }
+
+ .album-item .album-content:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   background-color: rgba(84, 207, 255, 0.5);
+ }
+
+ .album-item .album-preview-title {
+   text-transform: uppercase;
+   text-align: center;
+   height: 40px;
+   line-height: 40px;
+   margin-bottom: 0;
+   position: relative;
+ }
+
+ .album-item .album-preview-title a {
+   color: #fff;
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ .album-item-wrap:nth-child(even) .album-content {
+   background-color: #0180c4;
+ }
+
+ .album-item-wrap:nth-child(even) .album-preview-thumb .album-count {
+   background-color: rgba(0, 153, 217, 0.5);
+ }
+
+ .album-item-wrap:nth-child(even) .album-meta {
+   background-color: #1b68b1;
+   background-color: #1b68b1, 0.5;
+ }
+
+ /* END: Album generic preview */
+ /* BEGIN: Photo main ****/
+ .feat-photo-wrap .feat-photo {
+   position: relative;
+ }
+
+ .feat-photo-wrap .feat-photo img {
+   width: 100%;
+   height: auto;
+ }
+
+ .feat-photo-wrap .feat-photo .ribbon {
+   display: block;
+   width: 65px;
+   height: 50px;
+   position: absolute;
+   top: -13px;
+   right: 15px;
+ }
+
+ .feat-photo-wrap .feat-photo-content {
+   margin-top: 15px;
+ }
+
+ .feat-photo-wrap .feat-photo-title {
+   margin-bottom: 15px;
+   position: relative;
+   text-transform: uppercase;
+ }
+
+ .feat-photo-wrap .feat-photo-title .see {
+   font-size: 16px;
+ }
+
+ .feat-photo-wrap .feat-photo-text {
+   opacity: 0.5;
+ }
+
+ .photos-title {
+   margin-bottom: 15px;
+   text-transform: uppercase;
+ }
+
+ /* BEGIN: Fancy (gradient line) title ****/
+ .fancy-title .fancy-title__title {
+   display: block;
+   float: left;
+   padding-right: 10px;
+ }
+
+ .fancy-title .fancy-title__line {
+   display: block;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .fancy-title .fancy-title__line:after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 50%;
+   margin-top: -3px;
+   width: 100%;
+   height: 2px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,54cfff+100&0+0,1+100 */
+   background: -moz-linear-gradient(left, rgba(84, 207, 255, 0) 0%, #54cfff 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(84, 207, 255, 0) 0%, #54cfff 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(84, 207, 255, 0) 0%, #54cfff 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0054cfff', endColorstr='#54cfff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .fancy-title .fancy-title__right {
+   padding-left: 10px;
+   display: block;
+   float: right;
+   text-transform: uppercase;
+   color: #54cfff;
+   opacity: 0.5;
+   font-size: 16px;
+ }
+
+ /* END: Fancy (gradient line) title ****/
+ .albums-preview-wrap {
+   margin-top: 25px;
+ }
+
+ .albums-preview-wrap .album-items {
+   margin-left: -5px;
+   margin-right: -5px;
+ }
+
+ .albums-preview-wrap .album-item-wrap {
+   float: left;
+   width: 25%;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+
+ .latest-media-carousel {
+   margin-top: 60px;
+ }
+
+ .latest-media-carousel .latest-media-carousel-wrap {
+   padding-left: 0px;
+   padding-right: 0px;
+   position: relative;
+ }
+
+ .latest-media-carousel .latest-media-carousel-wrap .nle-owl-prev,
+ .latest-media-carousel .latest-media-carousel-wrap .nle-owl-next {
+   display: block;
+   width: 45px;
+   height: 100%;
+   line-height: 180px;
+   text-align: center;
+   color: #54cfff;
+   position: absolute;
+   top: 0;
+   background-color: rgba(84, 207, 255, 0.2);
+ }
+
+ .latest-media-carousel .latest-media-carousel-wrap .nle-owl-prev .n-icon svg,
+ .latest-media-carousel .latest-media-carousel-wrap .nle-owl-next .n-icon svg {
+   height: 32px;
+   width: auto;
+   display: inline-block;
+ }
+
+ .latest-media-carousel .latest-media-carousel-wrap .nle-owl-prev {
+   left: 0;
+ }
+
+ .latest-media-carousel .latest-media-carousel-wrap .nle-owl-next {
+   right: 0;
+ }
+
+ #latest-photos .latest-media-carousel-wrap .item {
+   position: relative;
+ }
+
+ #latest-photos .latest-media-carousel-wrap .item a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+
+ #latest-photos .latest-media-carousel-wrap .item a:hover {
+   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   -moz-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+
+ #latest-albums .album-preview-title {
+   width: 267px;
+ }
+
+ #latest-albums .album-item .album-preview-title a {
+   position: static;
+   top: auto;
+   left: auto;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+ }
+
+ /* END: Photo main ****/
+ /* BEGIN: Photo Taxonomy ****/
+ .photo-album-gs {
+   margin-bottom: 25px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .photo-album-gs .feat-photo {
+   width: 400px;
+   float: left;
+   position: relative;
+ }
+
+ .photo-album-gs .feat-photo img {
+   width: 100%;
+ }
+
+ .photo-album-gs .feat-photo .icon-holder {
+   display: inline-block;
+   width: 35px;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   color: #54cfff;
+   pointer-events: none;
+ }
+
+ .photo-album-gs .album-preview-thumb {
+   height: 100px;
+   line-height: 100px;
+ }
+
+ .photo-album-gs .album-content-wrap {
+   float: left;
+   width: 380px;
+ }
+
+ .photo-album-gs .album-content {
+   padding-left: 20px;
+ }
+
+ .photo-album-gs .album-meta>span {
+   display: block;
+   margin-bottom: 15px;
+ }
+
+ .photo-album-gs .album-meta .n-icon {
+   margin-right: 7px;
+   color: #54cfff;
+   opacity: 0.5;
+ }
+
+ .photo-album-gs .photo-social {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 400px;
+ }
+
+ .photo-album-gs .photo-social .photo-social-label {
+   margin-left: 0;
+ }
+
+ .photo-album-t {
+   overflow: hidden;
+   margin-bottom: 20px;
+   width: 50%;
+   float: left;
+ }
+
+ .photo-album-t .album-preview-img {
+   height: 220px;
+ }
+
+ .photo-album-t .album-preview-thumb {
+   height: 85px;
+   line-height: 85px;
+ }
+
+ .photo-album-t .album-content {
+   background-color: transparent;
+ }
+
+ .photo-album-t .album-preview-title {
+   margin-bottom: 0;
+   height: 60px;
+   line-height: 60px;
+   font-size: 20px;
+   text-align: left;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+   background-color: #00a5e4;
+ }
+
+ .photo-album-t .album-preview-title a {
+   padding-left: 25px;
+   padding-right: 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+ }
+
+ .photo-album-t .album-meta {
+   padding: 15px 10px 10px 20px;
+   font-size: 14px;
+   background-color: #0099d9;
+   background-color: rgba(0, 153, 217, 0.5);
+ }
+
+ .photo-album-t .album-meta>span {
+   display: block;
+   margin-bottom: 5px;
+ }
+
+ .photo-album-t .album-meta .n-icon {
+   margin-right: 10px;
+   color: #54cfff;
+   opacity: 0.8;
+ }
+
+ .photo-album-t:nth-child(4n-2) .album-item-wrap .album-preview-title,
+ .photo-album-t:nth-child(4n-1) .album-item-wrap .album-preview-title {
+   background-color: #0180c4;
+ }
+
+ .photo-album-t:nth-child(4n-2) .album-item-wrap .album-preview-thumb .album-count,
+ .photo-album-t:nth-child(4n-1) .album-item-wrap .album-preview-thumb .album-count {
+   background-color: rgba(0, 153, 217, 0.5);
+ }
+
+ .photo-album-t:nth-child(4n-2) .album-item-wrap .album-meta,
+ .photo-album-t:nth-child(4n-1) .album-item-wrap .album-meta {
+   background-color: #1b68b1;
+   background-color: rgba(27, 104, 177, 0.5);
+ }
+
+ /* END: Photo Taxonomy ****/
+ /* BEGIN: Photo Dates ****/
+ .pick-date {
+   margin-bottom: 10px;
+   padding-left: 10px;
+   height: 50px;
+   line-height: 50px;
+   color: #fff;
+   background-color: #54cfff;
+   background-color: rgba(84, 207, 255, 0.2);
+ }
+
+ .pick-date h6 {
+   float: left;
+   opacity: 0.8;
+   display: inline-block;
+   line-height: 55px;
+   margin-bottom: 0;
+ }
+
+ .pick-date #formdate {
+   float: right;
+ }
+
+ .pick-date #formdate .submit-label {
+   display: inline-block;
+   margin-left: 8px;
+   width: 105px;
+   height: 50px;
+   color: #fff;
+   text-align: center;
+   cursor: pointer;
+   border: none;
+   background-color: #54cfff;
+   background-color: rgba(84, 207, 255, 0.8);
+ }
+
+ .pick-date #formdate .submit-label .n-icon {
+   vertical-align: middle;
+ }
+
+ .photo-grid-item {
+   width: 33.33333%;
+   padding-left: 5px;
+   padding-right: 5px;
+   margin-bottom: 10px;
+   float: left;
+ }
+
+ .photo-grid-item .photo-grid-content {
+   position: relative;
+ }
+
+ .photo-grid-item a {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+ }
+
+ .photo-grid-item:hover a {
+   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   -moz-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+
+ .photo-grid-item img {
+   width: 100%;
+   position: relative;
+   z-index: 1;
+ }
+
+ .photo-grid-item .n-icon-hq-overlay {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   width: 50px;
+   height: 50px;
+   z-index: 9;
+ }
+
+ /* END: Photo Dates ****/
+ /* BEGIN: Photo Single ****/
+ .photoview-main .photoview-main-photo img {
+   width: 100%;
+   height: auto;
+ }
+
+ .photoview-main #pv-links {
+   overflow: hidden;
+ }
+
+ .photoviewer .pv-inside {
+   padding-top: 35px;
+   padding-bottom: 35px;
+   position: relative;
+ }
+
+ .photoviewer .pv-inside .pv-left,
+ .photoviewer .pv-inside .pv-right {
+   display: block;
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .photoviewer .pv-inside .pv-left .n-icon,
+ .photoviewer .pv-inside .pv-right .n-icon {
+   opacity: 0.7;
+ }
+
+ .photoviewer .pv-inside .pv-left {
+   top: 0;
+ }
+
+ .photoviewer .pv-inside .pv-left .n-icon {
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+   transform: rotate(90deg);
+ }
+
+ .photoviewer .pv-inside .pv-right {
+   bottom: 0;
+ }
+
+ .photoviewer .pv-inside .pv-right .n-icon {
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+ }
+
+ .photoviewer #pv-links {
+   height: 570px;
+   overflow: hidden;
+ }
+
+ .photoviewer #pv-photos {
+   position: relative;
+   height: 570px;
+ }
+
+ .photoviewer #pv-photos li {
+   margin-bottom: 10px;
+   width: 175px;
+   height: 143px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .photoviewer #pv-photos li a {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9;
+   width: 100%;
+   height: 100%;
+   background-position: center 0;
+   background-size: cover;
+ }
+
+ .photoviewer #pv-photos li.thumb-selected a {
+   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   -moz-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+
+ .photoviewer #pv-photos li img {
+   width: 100%;
+ }
+
+ #photo-sidebar__image-info .album-title {
+   padding: 10px 20px;
+   background-color: rgba(84, 207, 255, 0.3);
+   position: relative;
+ }
+
+ #photo-sidebar__image-info .album-title a {
+   color: #fff;
+ }
+
+ #photo-sidebar__image-info .album-title .n-icon {
+   position: absolute;
+   top: 7px;
+   left: -7px;
+   color: #54cfff;
+ }
+
+ #photo-sidebar__image-info .photo-description,
+ #photo-sidebar__image-info .image-meta-list {
+   padding: 10px 20px 5px 20px;
+   background-color: rgba(84, 207, 255, 0.15);
+   border-right: 5px solid #54cfff;
+ }
+
+ #photo-sidebar__image-info .image-meta-list li {
+   margin-bottom: 15px;
+ }
+
+ #photo-sidebar__image-info .image-meta-list .n-icon {
+   color: #54cfff;
+ }
+
+ #photo-sidebar__image-info .image-meta-list .image-hq .n-icon {
+   display: block;
+   float: left;
+   margin-right: 3px;
+ }
+
+ #photo-sidebar__image-info .photo-description {
+   padding-bottom: 0;
+   font-size: 14px;
+ }
+
+ #photo-sidebar__image-info .photo-description p {
+   margin-bottom: 10px;
+ }
+
+ #photo-sidebar__image-info .photo-description p:last-child {
+   margin-bottom: 0;
+ }
+
+ /* END: Photo Single ****/
+ /* BEGIN: Photo Social Buttons ****/
+ .social-buttons {
+   display: block;
+   float: right;
+ }
+
+ .social-buttons,
+ .social-buttons a,
+ .social-buttons a:visited,
+ .social-buttons a:hover {
+   color: #fff;
+ }
+
+ .social-buttons .social-btn {
+   display: inline-block;
+   opacity: 0.5;
+   width: 50px;
+   height: 50px;
+   position: relative;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+ }
+
+ .social-buttons .social-btn:hover a {
+   color: #fff !important;
+ }
+
+ .social-buttons .social-btn svg {
+   display: inline-block;
+ }
+
+ .social-buttons .social-btn--facebook:hover {
+   background-color: #3b5998;
+ }
+
+ .social-buttons .social-btn--twitter:hover {
+   background-color: #00aced;
+ }
+
+ .social-buttons .social-btn--pinterest {
+   float: right;
+ }
+
+ .social-buttons .social-btn--pinterest:hover {
+   background-color: #cb2027;
+ }
+
+ .social-buttons .n-icon {
+   display: block;
+   width: 100%;
+   height: 100%;
+   line-height: 25px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: center;
+ }
+
+ .social-buttons .n-icon svg {
+   max-height: 100%;
+   width: auto;
+ }
+
+ .social-buttons .social-count {
+   display: inline-block;
+   width: 100%;
+   height: 25px;
+   line-height: 25px;
+   text-align: center;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: transparent;
+   opacity: 0;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+ }
+
+ .social-buttons .social-btn:hover {
+   opacity: 1;
+ }
+
+ .social-buttons .social-btn:hover .social-count {
+   opacity: 1;
+   background-color: rgba(255, 255, 255, 0.2);
+   -webkit-transform: translateY(-25px);
+   -moz-transform: translateY(-25px);
+   -ms-transform: translateY(-25px);
+   -o-transform: translateY(-25px);
+   transform: translateY(-25px);
+ }
+
+ /* END: Photo Social Buttons ****/
+ /* BEGIN: Photo Topic Page ****/
+ .photo-topic-wrap .albums-preview-wrap {
+   margin-top: 0;
+ }
+
+ .photo-topic-wrap .topic-name {
+   display: block;
+   margin-top: 5px;
+   padding: 3px 3px 3px 10px;
+   text-transform: uppercase;
+   background-color: rgba(0, 0, 0, 0.15);
+ }
+
+ .photo-topic-wrap .topic-name .n-icon {
+   color: #54cfff;
+ }
+
+ .photo-topic-wrap .topic-popular .album-item-wrap {
+   width: 33.33333%;
+ }
+
+ .photo-topic-wrap .topic-popular .album-item-wrap .album-preview-img {
+   height: 176px;
+   overflow: hidden;
+ }
+
+ .photo-topic-wrap .topic-popular .album-item-wrap .album-count {
+   font-size: 19px;
+ }
+
+ .photo-topic-wrap .topic-less-popular .album-item-wrap {
+   margin-top: 25px;
+ }
+
+ .photo-topic-wrap .topic-less-popular .album-preview-img {
+   height: 132px;
+   overflow: hidden;
+ }
+
+ .photo-topic-wrap .topic-less-popular .topic-name {
+   font-size: 14px;
+ }
+
+ .photo-topic-wrap .topic-less-popular .topic-name .n-icon {
+   display: none;
+ }
+
+ .photo-topic-wrap .topic-less-popular .album-preview-thumb {
+   height: 50px;
+   line-height: 50px;
+ }
+
+ .photo-topic-wrap .topic-less-popular .album-count {
+   font-size: 14px;
+ }
+
+ .photo-topic-wrap .tag-cloud {
+   margin-top: 40px;
+ }
+
+ /* END: Photo Topic Page ****/
+ /* BEGIN: Location / Topic sub menu (Album & Video) ****/
+ .tax-album_location .subnav-locations,
+ .tax-album_location .subnav-topics,
+ .tax-album_topic .subnav-locations,
+ .tax-album_topic .subnav-topics,
+ .tax-video_location .subnav-locations,
+ .tax-video_location .subnav-topics,
+ .tax-video_topic .subnav-locations,
+ .tax-video_topic .subnav-topics {
+   border-right: none !important;
+ }
+
+ .tax-album_location .subnav-locations .sidebar-submenu,
+ .tax-album_location .subnav-topics .sidebar-submenu,
+ .tax-album_topic .subnav-locations .sidebar-submenu,
+ .tax-album_topic .subnav-topics .sidebar-submenu,
+ .tax-video_location .subnav-locations .sidebar-submenu,
+ .tax-video_location .subnav-topics .sidebar-submenu,
+ .tax-video_topic .subnav-locations .sidebar-submenu,
+ .tax-video_topic .subnav-topics .sidebar-submenu {
+   padding-top: 0;
+   padding-bottom: 0;
+   background-color: transparent;
+   border-right: 5px solid #54cfff;
+   font-size: 14px;
+   font-family: "Gotham-Medium";
+ }
+
+ .tax-album_location .subnav-locations .sidebar-submenu li,
+ .tax-album_location .subnav-topics .sidebar-submenu li,
+ .tax-album_topic .subnav-locations .sidebar-submenu li,
+ .tax-album_topic .subnav-topics .sidebar-submenu li,
+ .tax-video_location .subnav-locations .sidebar-submenu li,
+ .tax-video_location .subnav-topics .sidebar-submenu li,
+ .tax-video_topic .subnav-locations .sidebar-submenu li,
+ .tax-video_topic .subnav-topics .sidebar-submenu li {
+   padding-left: 50px;
+   line-height: 24px;
+   position: relative;
+ }
+
+ .tax-album_location .subnav-locations .sidebar-submenu li .n-icon,
+ .tax-album_location .subnav-topics .sidebar-submenu li .n-icon,
+ .tax-album_topic .subnav-locations .sidebar-submenu li .n-icon,
+ .tax-album_topic .subnav-topics .sidebar-submenu li .n-icon,
+ .tax-video_location .subnav-locations .sidebar-submenu li .n-icon,
+ .tax-video_location .subnav-topics .sidebar-submenu li .n-icon,
+ .tax-video_topic .subnav-locations .sidebar-submenu li .n-icon,
+ .tax-video_topic .subnav-topics .sidebar-submenu li .n-icon {
+   position: absolute;
+   top: 2px;
+   left: 20px;
+ }
+
+ /* END: Location / Topic sub menu ****/
+ body.video-page #main {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#255ade+0,ffffff+100&0.5+0,0+100 */
+   background: #071829 url("../images/video-bg.png") center 0 repeat-x;
+ }
+
+ body.video-page .sidebar__inner {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,ffffff+100&0.2+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3354cfff', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ body.video-page .sidebar__inner .n-icon {
+   color: #54cfff;
+ }
+
+ .video-content {
+   margin-top: 20px;
+ }
+
+ .video-content>span {
+   display: block;
+   margin-bottom: 10px;
+   opacity: 0.5;
+ }
+
+ .video-content .video-content__title {
+   margin-bottom: 15px;
+ }
+
+ .video-content .video-content__text {
+   opacity: 0.5;
+   margin-bottom: 30px;
+ }
+
+ .video-content .video-content__text p:last-child {
+   margin-bottom: 0;
+ }
+
+ .video-content .video-content__meta {
+   margin-bottom: 30px;
+ }
+
+ .video-content .video-content__meta li {
+   margin-bottom: 10px;
+ }
+
+ .video-content .video-content__meta,
+ .video-content .video-content__meta a,
+ .video-content .video-content__meta a:hover a:visited {
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 14px;
+ }
+
+ .video-content .video-content__meta .n-icon {
+   margin-right: 10px;
+   color: #54cfff;
+   opacity: 0.7;
+ }
+
+ /* BEGIN: Video main page **************/
+ .media-list-item-wrap {
+   margin-bottom: 10px;
+   position: relative;
+   float: left;
+ }
+
+ .media-list-item-wrap a {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+ }
+
+ .media-list-item-wrap:hover>a {
+   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   -moz-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+
+ .media-list .media-list-item {
+   width: 100%;
+   padding-bottom: 40px;
+   position: relative;
+ }
+
+ .media-list .media-list-item:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+ }
+
+ .media-list .media-list-item .media-list-image {
+   display: block;
+   height: 150px;
+   overflow: hidden;
+ }
+
+ .media-list .media-list-item img {
+   width: 100%;
+ }
+
+ .media-list .media-list-item p {
+   margin-bottom: 0;
+   padding: 10px;
+   opacity: 0.8;
+ }
+
+ .media-list .media-list-item .media-list-meta {
+   display: block;
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   font-size: 14px;
+   color: #54cfff;
+   color: rgba(84, 207, 255, 0.7);
+ }
+
+ .media-list .media-list-item .n-icon-play {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   width: 50px;
+   height: 50px;
+ }
+
+ .media-list.video-list .media-list-item {
+   background-color: #00599c;
+   background-color: rgba(0, 89, 156, 0.5);
+ }
+
+ .media-list.video-list .media-list-item:after {
+   background-color: rgba(33, 96, 204, 0.5);
+ }
+
+ #latest-videos .nle-owl-prev,
+ #latest-videos .nle-owl-next {
+   line-height: 160px;
+ }
+
+ #latest-videos .latest-media-carousel-wrap .item {
+   position: relative;
+ }
+
+ #latest-videos .latest-media-carousel-wrap .item a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+
+ #latest-videos .latest-media-carousel-wrap .item a:hover {
+   -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   -moz-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+
+ /* END: Video main page **************/
+ .video-page .pick-date .label {
+   color: #54cfff;
+   color: rgba(84, 207, 255, 0.8);
+ }
+
+ .video-page .pick-date .drops .select-wrap select {
+   color: #54cfff;
+   color: rgba(84, 207, 255, 0.8);
+ }
+
+ .video-page .pick-date #formdate .submit-label {
+   background-color: #255ade;
+   background-color: rgba(37, 90, 222, 0.8);
+ }
+
+ /* BEGIN: Video topic **************/
+ .album-item-wrap--video {
+   position: relative;
+ }
+
+ .album-item-wrap--video .n-icon-play {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   width: 50px;
+   height: 50px;
+ }
+
+ /* END: Video topic **************/
+ body.timeline-page #main {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,ffffff+100&0.5+0,0+100 */
+ }
+
+ body.timeline-page .sidebar__inner {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,ffffff+100&0.2+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3354cfff', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ body.timeline-page #timeline-sidebar .timeline-submenu {
+   margin-bottom: 40px;
+ }
+
+ body.timeline-page #timeline-sidebar .select-monthnum {
+   width: 110px;
+ }
+
+ body.timeline-page #timeline-sidebar .select-year {
+   width: 65px;
+ }
+
+ body.timeline-page #timeline-sidebar .timeline-archive-submit-label {
+   display: inline-block;
+   margin-left: 10px;
+   width: 35px;
+   height: 35px;
+   color: #00599c;
+   text-align: center;
+   border: none;
+   background-color: #fff;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding-top: 5px;
+ }
+
+ body.timeline-page #timeline-sidebar .archive-submit {
+   margin-left: 10px;
+   width: 35px;
+ }
+
+ .timeline-posts-grid .masonry-grid-sizer {
+   width: 50%;
+ }
+
+ .timeline-posts-grid .tl-post {
+   width: 50%;
+ }
+
+ .tl-post {
+   padding: 5px;
+   float: left;
+ }
+
+ .tl-post .tl-post__inner {
+   padding: 10px 15px 15px 15px;
+   background-color: #1c6081;
+   position: relative;
+ }
+
+ .tl-post .tl-header {
+   margin-bottom: 15px;
+ }
+
+ .tl-post .tl-date {
+   float: left;
+ }
+
+ .tl-post .tl-type {
+   float: right;
+   width: 30px;
+ }
+
+ .tl-post .tl-post-media {
+   display: block;
+   margin-bottom: 15px;
+ }
+
+ .tl-post .tl-post-media img {
+   width: 100%;
+ }
+
+ .tl-post .tl-post-excerpt {
+   font-family: 'Signika Negative Light';
+ }
+
+ .tl-post .tl-post-excerpt p {
+   margin-bottom: 15px;
+ }
+
+ .tl-post .tl-post-excerpt p:last-child {
+   margin-bottom: 0;
+ }
+
+ .tl-post .n-icon {
+   color: #54cfff;
+ }
+
+ .tl-post .tl-tag>a {
+   display: inline-block;
+   margin-left: 12px;
+   padding: 4px 7px;
+   background-color: #175571;
+ }
+
+ .tl-post .tl-tag>a:first-child {
+   margin-left: 0;
+ }
+
+ .tl-post.tl-post-single {
+   float: none;
+ }
+
+ .tl-post.tl-post-single.tl-type-photo .tl-post-media,
+ .tl-post.tl-post-single.tl-type-photo .tl-post-content,
+ .tl-post.tl-post-single.tl-type-video .tl-post-media,
+ .tl-post.tl-post-single.tl-type-video .tl-post-content {
+   width: 50%;
+   float: left;
+ }
+
+ .tl-post.tl-post-single.tl-type-photo .tl-post-media,
+ .tl-post.tl-post-single.tl-type-video .tl-post-media {
+   padding-right: 10px;
+ }
+
+ .tl-post.tl-post-single.tl-type-photo .tl-post-content,
+ .tl-post.tl-post-single.tl-type-video .tl-post-content {
+   padding-left: 10px;
+ }
+
+ body.nolefam-page #main {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d8eff+0,ffffff+100&0.5+0,0+100 */
+   background: #071829 url("../images/nolefam-bg.png") center 0 repeat-x;
+ }
+
+ .nolefam-stats {
+   padding-top: 25px;
+   float: left;
+   height: 385px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,54cfff+100&0+0,0.6+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.6) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.6) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0) 0%, rgba(84, 207, 255, 0.6) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0054cfff', endColorstr='#9954cfff', GradientType=0);
+   /* IE6-9 */
+   position: relative;
+ }
+
+ .nolefam-stats:before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   background-color: rgba(0, 177, 217, 0.5);
+ }
+
+ .nolefam-stats-title {
+   margin-bottom: 0;
+   text-align: center;
+   color: #fff;
+   opacity: 0.6;
+ }
+
+ #nolefam-stats-week {
+   margin-right: 10px;
+   width: 655px;
+ }
+
+ #nolefam-stats-week .nolefam-stats__inner {
+   padding-top: 25px;
+   padding-left: 45px;
+ }
+
+ #nolefam-stats-week .stats-box {
+   float: left;
+ }
+
+ #nolefam-stats-week .stats-box h2 {
+   margin-top: 33px;
+   margin-bottom: 0;
+ }
+
+ #nolefam-stats-week .stats-box h6 {
+   margin-top: 18px;
+   margin-bottom: 0;
+   opacity: 0.4;
+ }
+
+ #nolefam-stats-week .stats-box .stats-post-avg {
+   margin-top: 15px;
+   color: #000;
+   opacity: 0.4;
+ }
+
+ #nolefam-stats-week .fb-stats {
+   margin-right: 20px;
+   width: 170px;
+   text-align: center;
+ }
+
+ #nolefam-stats-week .total-stats {
+   margin-right: 20px;
+   width: 204px;
+ }
+
+ #nolefam-stats-week .total-stats ul {
+   margin-left: 27px;
+   margin-right: 23px;
+ }
+
+ #nolefam-stats-week .total-stats ul li {
+   margin-bottom: 20px;
+ }
+
+ #nolefam-stats-week .total-stats ul .label {
+   opacity: 0.4;
+ }
+
+ #nolefam-stats-week .total-stats ul .count {
+   float: right;
+ }
+
+ #nolefam-stats-week .total-stats .total-fb-likes {
+   margin-top: 40px;
+   width: 100%;
+   height: 100px;
+   padding-top: 18px;
+   background-color: rgba(84, 207, 255, 0.4);
+ }
+
+ #nolefam-stats-week .total-stats .total-fb-likes h6 {
+   margin-top: 0;
+   padding-left: 27px;
+ }
+
+ #nolefam-stats-week .total-stats .total-fb-likes h6 .label {
+   opacity: 0.4;
+ }
+
+ #nolefam-stats-week .total-stats .total-fb-likes .count {
+   display: block;
+   margin-top: 20px;
+   font-size: 32px;
+   text-align: center;
+ }
+
+ #nolefam-stats-week .tw-stats {
+   width: 180px;
+   text-align: center;
+   position: relative;
+ }
+
+ #nolefam-stats-week .tw-stats:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+100&0+0,0.5+50,0+100 */
+   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ #nolefam-stats-day {
+   width: 435px;
+ }
+
+ #nolefam-stats-day .nolefam-stats__inner {
+   padding-top: 30px;
+   padding-left: 55px;
+ }
+
+ #nolefam-stats-day .fb-stats {
+   padding-bottom: 25px;
+   margin-bottom: 35px;
+   position: relative;
+ }
+
+ #nolefam-stats-day .fb-stats:before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+100&0+0,0.5+50,0+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ #nolefam-stats-day img {
+   display: block;
+   float: left;
+   width: 105px;
+   margin-right: 25px;
+ }
+
+ #nolefam-stats-day .stats-post-content {
+   float: left;
+ }
+
+ #nolefam-stats-day .stats-post-content .stats-post-count {
+   margin-bottom: 10px;
+ }
+
+ #nolefam-stats-day .stats-post-content .label {
+   margin-bottom: 10px;
+ }
+
+ #nolefam-fan-count {
+   height: 355px;
+   position: relative;
+ }
+
+ #nolefam-fan-count #nolefam-fan-count__bg {
+   width: 100%;
+   height: 100%;
+ }
+
+ #nolefam-fan-count .sm-count {
+   display: block;
+   width: 100px;
+   font-family: "Gotham-Bold", sans-serif;
+   font-size: 20px;
+   text-align: center;
+   position: absolute;
+ }
+
+ #nolefam-fan-count #count-google-plus {
+   top: 90px;
+   left: 25px;
+ }
+
+ #nolefam-fan-count #count-weibo {
+   top: 270px;
+   left: 100px;
+ }
+
+ #nolefam-fan-count #count-twitter {
+   top: 215px;
+   left: 270px;
+ }
+
+ #nolefam-fan-count #count-facebook {
+   top: 285px;
+   left: 500px;
+ }
+
+ #nolefam-fan-count #count-instagram {
+   top: 270px;
+   right: 290px;
+ }
+
+ #nolefam-fan-count #count-tqq {
+   top: 162px;
+   right: 148px;
+ }
+
+ #nolefam-fan-count #count-youtube {
+   top: 242px;
+   right: 30px;
+ }
+
+ #nolefam-total-fan-count {
+   margin-top: 10px;
+   height: 113px;
+   line-height: 113px;
+   background: url("../images/nolefam-fan-amount-bg.png") 0 0 no-repeat;
+   position: relative;
+ }
+
+ #nolefam-total-fan-count:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 9;
+   width: 100%;
+   height: 4px;
+   background-color: rgba(255, 255, 255, 0.5);
+ }
+
+ #nolefam-total-fan-count .fan-count-title {
+   margin-left: 40px;
+   margin-right: 280px;
+   float: left;
+   color: #0e4379;
+   height: 100%;
+   line-height: 113px;
+ }
+
+ #nolefam-total-fan-count .count {
+   font-size: 62px;
+   font-family: "Signika Negative Light";
+ }
+
+ #nolefam-total-fan-count .hearts {
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 2;
+ }
+
+ #nolefam-total-fan-count .hearts .heart-1 {
+   display: block;
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 47px;
+   right: 107px;
+   z-index: 3;
+   animation: heartbeat 1s infinite;
+ }
+
+ #nolefam-total-fan-count .hearts .heart-1 svg {
+   display: block;
+ }
+
+ #nolefam-total-fan-count .hearts .heart-2 {
+   display: block;
+   width: 28px;
+   height: 28px;
+   position: absolute;
+   top: 55px;
+   right: 79px;
+   z-index: 3;
+   animation: heartbeat 1s infinite;
+ }
+
+ #nolefam-total-fan-count .hearts .heart-2 svg {
+   display: block;
+ }
+
+ #nolefam-total-fan-count .hearts .heart-3 {
+   display: block;
+   width: 55px;
+   height: 55px;
+   position: absolute;
+   top: 23px;
+   right: 20px;
+   z-index: 3;
+   animation: heartbeat 1s infinite;
+ }
+
+ #nolefam-total-fan-count .hearts .heart-3 svg {
+   display: block;
+ }
+
+ .live-container {
+   margin-top: 10px;
+   padding-top: 25px;
+   position: relative;
+ }
+
+ .live-container:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 0;
+   width: 100%;
+   height: 650px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54cfff+0,54cfff+100&0.6+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(84, 207, 255, 0.6) 0%, rgba(84, 207, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(84, 207, 255, 0.6) 0%, rgba(84, 207, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(84, 207, 255, 0.6) 0%, rgba(84, 207, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9954cfff', endColorstr='#0054cfff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .live-container .live-title {
+   margin-bottom: 30px;
+   text-align: center;
+   opacity: 0.6;
+ }
+
+ .live-posts-grid {
+   margin-left: 5px;
+   margin-right: 5px;
+ }
+
+ .live-item-wrap {
+   margin-bottom: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 50%;
+   float: left;
+ }
+
+ .live-item-wrap .live-item {
+   position: relative;
+ }
+
+ .live-item-wrap .live-item-avatar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 40px;
+   height: 40px;
+   overflow: hidden;
+   border: 1px solid #fff;
+   background-color: #fff;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+ }
+
+ .live-item-wrap .live-item-author {
+   margin-bottom: 15px;
+ }
+
+ .live-item-wrap .live-item-author .n-icon {
+   vertical-align: bottom;
+ }
+
+ .live-item-wrap .live-item-author .n-icon svg {
+   display: block;
+ }
+
+ .live-item-wrap .live-item-author .live-via {
+   opacity: 0.7;
+ }
+
+ .live-item-wrap .live-item-author .live-ago {
+   float: right;
+   font-size: 14px;
+   line-height: 24px;
+ }
+
+ .live-item-wrap .live-item-author .live-ago .n-icon {
+   color: #54cfff;
+ }
+
+ .live-item-wrap .live-item-content {
+   margin-left: 50px;
+   padding: 10px 15px 15px 15px;
+   border-left: 2px solid #fff;
+   background-color: rgba(84, 207, 255, 0.2);
+   position: relative;
+ }
+
+ .live-item-wrap .live-item-content:before {
+   content: "";
+   position: absolute;
+   top: 13px;
+   left: -8px;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 8px 8px 8px 0;
+   border-color: transparent #ffffff transparent transparent;
+ }
+
+ .live-item-wrap .live-item-img {
+   display: block;
+   margin-bottom: 18px;
+   width: 100%;
+ }
+
+ .live-item-wrap .live-item-img img {
+   width: 100%;
+ }
+
+ .live-item-wrap .live-item-excerpt {
+   font-family: 'Signika Negative Light';
+ }
+
+ .live-item-wrap .live-item-excerpt p:last-child {
+   margin-bottom: 0;
+ }
+
+ #foundation-floater {
+   display: block;
+   position: fixed;
+   top: 150px;
+   right: 0;
+   width: 50px;
+   height: 355px;
+   color: #fff;
+   text-align: center;
+   line-height: 50px;
+   vertical-align: middle;
+   background-color: #9d1317;
+ }
+
+ #foundation-floater .label {
+   display: block;
+   width: 305px;
+   height: 50px;
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+   transform: rotate(90deg);
+   -webkit-transform-origin: left top;
+   -moz-transform-origin: left top;
+   -ms-transform-origin: left top;
+   -o-transform-origin: left top;
+   transform-origin: left top;
+   position: absolute;
+   top: 0;
+   left: 50px;
+ }
+
+ #foundation-floater .icon {
+   display: block;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   background-color: #c82e3b;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+ }
+
+ #foundation-floater .icon .n-icon {
+   vertical-align: middle;
+ }
+
+ #foundation-floater:hover .n-icon {
+   animation: heartbeat 1s;
+ }
+
+ @keyframes heartbeat {
+   0% {
+     transform: scale(1);
+   }
+
+   25% {
+     transform: scale(0.75);
+   }
+
+   50% {
+     transform: scale(1);
+   }
+
+   75% {
+     transform: scale(0.75);
+   }
+
+   100% {
+     transform: scale(1);
+   }
+ }
+
+ .error404 #header-menu li:not(.menu-logo):hover {
+   border-color: #00a5e4;
+   background-color: rgba(0, 165, 228, 0.3);
+ }
+
+ .error404 #main {
+   padding-top: 80px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a5e4+0,ffffff+100&0.5+0,0+100 */
+   background: -moz-linear-gradient(top, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, rgba(0, 165, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8000a5e4', endColorstr='#00ffffff', GradientType=0);
+   /* IE6-9 */
+ }
+
+ .error-content {
+   text-align: center;
+ }
+
+ .error-content .error-thumb {
+   display: inline-block;
+   margin-bottom: 70px;
+ }
+
+ .error-content p {
+   color: #54cfff;
+ }
+
+ .error-content p:last-child {
+   position: relative;
+   padding-bottom: 30px;
+ }
+
+ .error-content p:last-child:after {
+   content: "";
+   display: block;
+   width: 60px;
+   height: 4px;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   margin-left: -30px;
+   background-color: #54cfff;
+   opacity: 0.5;
+ }
+
+ .facts-subheader {
+   text-align: center;
+   margin-bottom: 45px;
+   color: #54cfff;
+ }
+
+ .facts-subheader h1 {
+   margin-bottom: 10px;
+   color: #54cfff;
+   text-transform: uppercase;
+   font-family: 'Gotham-Medium';
+ }
+
+ .facts-subheader h1 span {
+   color: #fff;
+ }
+
+ .fact-post {
+   margin-bottom: 30px;
+   margin-left: 0;
+   margin-right: 0;
+   background-color: rgba(12, 105, 158, 0.7);
+   position: relative;
+ }
+
+ .fact-post:before {
+   content: "";
+   display: block;
+   position: absolute;
+   bottom: 4px;
+   left: 0;
+   z-index: 0;
+   width: 100%;
+   height: 100%;
+   height: calc(100% - 4px);
+   background-image: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/images/svg/bgd_01.svg");
+   background-repeat: no-repeat;
+   background-position: 0 100%;
+   opacity: 0.1;
+   -moz-transform: scaleX(-1);
+   /* Gecko */
+   -o-transform: scaleX(-1);
+   /* Opera */
+   -webkit-transform: scaleX(-1);
+   /* Webkit */
+   transform: scaleX(-1);
+   /* Standard */
+   filter: FlipH;
+   /* IE 6/7/8 */
+ }
+
+ .fact-post .b-border {
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 9;
+   width: 100%;
+   height: 4px;
+   background-color: rgba(84, 207, 255, 0.5);
+ }
+
+ .fact-post:nth-child(even):before {
+   background-position: 0 100%;
+   -moz-transform: none;
+   /* Gecko */
+   -o-transform: none;
+   /* Opera */
+   -webkit-transform: none;
+   /* Webkit */
+   transform: none;
+   /* Standard */
+   filter: none;
+   /* IE 6/7/8 */
+ }
+
+ .fact-post:nth-child(even) .fact-image {
+   float: right;
+ }
+
+ .fact-post:nth-child(even) .fact-content-wrap {
+   text-align: right;
+ }
+
+ .fact-post:nth-child(3n+2):before {
+   background-image: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/images/svg/bgd_02.svg");
+ }
+
+ .fact-post:nth-child(3n+3):before {
+   background-image: url("https://novakdjokovic.com/wp-content/themes/novak2/assets/images/svg/bgd_03.svg");
+ }
+
+ .fact-post .fact-image {
+   padding-left: 0;
+   padding-right: 0;
+   position: relative;
+   z-index: 1;
+ }
+
+ .fact-post .fact-content-wrap {
+   padding: 50px;
+   position: relative;
+   z-index: 1;
+ }
+
+ .fact-post .fact-content {
+   font-size: 28px;
+   font-family: 'Signika Negative Light';
+ }
+
+ .single-fact-post-wrap {
+   margin-bottom: 100px;
+ }
+
+ /* BEGIN: Results Shortcode */
+ .sc-results-wrap {
+   margin-bottom: 25px;
+   padding-left: 25px;
+   border-left: 2px solid rgba(196, 20, 36, 0.5);
+ }
+
+ .sc-results-wrap p {
+   margin-bottom: 15px;
+ }
+
+ /* END: Results Shortcode */
+ .sep-text-wrap {
+   text-align: center;
+ }
+
+ .sep-text-wrap:before,
+ .sep-text-wrap:after {
+   content: "";
+   display: inline-block;
+   height: 2px;
+   position: relative;
+   vertical-align: middle;
+   width: 50%;
+ }
+
+ .sep-text-wrap:before {
+   right: 0.5em;
+   margin-left: -50%;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f27066+100&0+0,1+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #f27066 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #f27066 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #f27066 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#f27066', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .sep-text-wrap:after {
+   left: 0.5em;
+   margin-right: -50%;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27066+0,ffffff+100&1+0,0+100 */
+   background: -moz-linear-gradient(left, #f27066 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, #f27066 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, #f27066 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27066', endColorstr='#00ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .sep-text-wrap.sep-small:before,
+ .sep-text-wrap.sep-small:after {
+   width: 30%;
+   height: 2px;
+   margin-top: -2px;
+ }
+
+ .novak-load-more.infinite-scroll.sep-text-wrap {
+   padding-top: 45px;
+   padding-bottom: 25px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .novak-load-more.infinite-scroll.sep-text-wrap:before {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,c4da5c+100&0+0,1+100 */
+   background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #c4da5c 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #c4da5c 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #c4da5c 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#c4da5c', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .novak-load-more.infinite-scroll.sep-text-wrap:after {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4da5c+0,ffffff+100&1+0,0+100 */
+   background: -moz-linear-gradient(left, #c4da5c 0%, rgba(255, 255, 255, 0) 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, #c4da5c 0%, rgba(255, 255, 255, 0) 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, #c4da5c 0%, rgba(255, 255, 255, 0) 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4da5c', endColorstr='#00ffffff', GradientType=1);
+   /* IE6-9 */
+ }
+
+ .novak-load-more.infinite-scroll.sep-text-wrap.loading path.preloader-fil1 {
+   animation: spin 3s infinite;
+   transform-origin: 50% 50%;
+ }
+
+ @keyframes loading {
+   0% {
+     transform: scale(1);
+   }
+
+   50% {
+     transform: scale(0.85);
+   }
+
+   100% {
+     transform: scale(1);
+   }
+ }
+
+ @-moz-keyframes spin {
+   100% {
+     -moz-transform: rotate(360deg);
+   }
+ }
+
+ @-webkit-keyframes spin {
+   100% {
+     -webkit-transform: rotate(360deg);
+   }
+ }
+
+ @keyframes spin {
+   100% {
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+   }
+ }
+
+ .nice-select {
+   background-color: rgba(0, 0, 0, 0.15);
+   display: inline-block;
+   padding: 5px 5px 5px 7px;
+   height: 35px;
+   line-height: 25px;
+   z-index: 9;
+   color: #fff;
+   -webkit-tap-highlight-color: transparent;
+   clear: both;
+   cursor: pointer;
+   font-family: inherit;
+   font-size: 14px;
+   font-weight: normal;
+   outline: none;
+   position: relative;
+   text-align: left !important;
+   transition: all 0.2s ease-in-out;
+   user-select: none;
+   white-space: nowrap;
+   width: auto;
+ }
+
+ .nice-select:active,
+ .nice-select:focus {
+   border-color: #999;
+ }
+
+ .nice-select:after {
+   border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+   border-right: 2px solid rgba(255, 255, 255, 0.7);
+   content: '';
+   display: block;
+   height: 5px;
+   margin-top: -4px;
+   pointer-events: none;
+   position: absolute;
+   right: 12px;
+   top: 50%;
+   transform-origin: 66% 66%;
+   transform: rotate(45deg);
+   transition: all 0.15s ease-in-out;
+   width: 5px;
+ }
+
+ .nice-select.open .list {
+   opacity: 1;
+   pointer-events: auto;
+   transform: scale(1) translateY(0);
+ }
+
+ .nice-select .list {
+   width: 100%;
+   background-color: #164b63;
+   margin-top: 4px;
+   opacity: 0;
+   overflow: hidden;
+   padding: 0;
+   pointer-events: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   transform-origin: 50% 0;
+   transform: scale(0.75) translateY(-16px);
+   transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+   z-index: 9;
+ }
+
+ .nice-select .list:hover .option:not(:hover) {
+   background-color: transparent !important;
+ }
+
+ .nice-select .option {
+   margin-bottom: 0;
+   cursor: pointer;
+   font-weight: 400;
+   line-height: 30px;
+   list-style: none;
+   min-height: 30px;
+   outline: none;
+   padding-left: 18px;
+   padding-right: 29px;
+   text-align: left;
+   transition: all 0.2s;
+   color: rgba(255, 255, 255, 0.5);
+ }
+
+ .nice-select .option:hover,
+ .nice-select .option.focus,
+ .nice-select .option.selected.focus {
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ .no-csspointerevents .nice-select .list {
+   display: none;
+ }
+
+ .no-csspointerevents .nice-select.open .list {
+   display: block;
+ }
+
+ /*# sourceMappingURL=main.css.map */
+
+ #footer__inner {
+   padding-top: 40px;
+   padding-left: 45px;
+   padding-right: 45px;
+   padding-bottom: 75px;
+   height: 100%;
+   background-size: contain;
+   position: relative;
+ }
+
+ #footer {
+   padding-top: 35px;
+   height: 320px;
+   clear: both;
+   position: relative;
+   background: url(../images/footer-gradient.png) 0 0 repeat-x;
+ }
+
+ #bottom_logo {
+   width: 100px;
+   position: absolute;
+   bottom: 10px;
+   left: 120px;
+ }
+
+ .home-visual__atpp {
+   height: 201px;
+   position: relative;
+   /* position: absolute; */
+   display: flex;
+   justify-content: center;
+   top: 625px;
+   background: #00000063;
+
+ }
+ .bxl-instagram-alt{
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+ }
