@@ -10,8 +10,7 @@ body {
         display: block !important;
     }
 }
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     body {
         zoom: 50%;
     }
@@ -55,7 +54,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 590px !important;
-        width: 100%;
+        width: 700px;
     }
 
     .photo-gallery__latest {
@@ -80,7 +79,7 @@ body {
     }
 
     #video-gallery {
-        width: 100%;
+        width: 710px;
         height: 420px;
 
         justify-content: center;
@@ -92,57 +91,48 @@ body {
         width: 580px !important;
     }
 
-    .container1 {}
+    .container1 {
+    }
 
     .col-lg-resp {
-
+       
         justify-content: center;
         display: flex;
     }
-
     #home-featured__banner {
-        display: none;
-        width: 570px !important;
-
+      
+            width: 570px !important ;
+     
     }
-
-    .navbar-toggler {
+    .navbar-toggler{
         font-size: 50px !important;
     }
-
-    .navbar i {
+    .navbar i{
         font-size: 30px !important;
     }
-
-    .col-lg-8res {
+    .col-lg-8res{
         display: flex;
         justify-content: center;
-
+       
     }
-
-    #home-featured__diduknow {
+    #home-featured__diduknow{
         margin: 0 !important;
-
+      
     }
-
-    .nav-link img {
+  
+    .nav-link img{
         width: 100px;
-        justify-content: center;
     }
-
-    #footer-logo {
+    #footer-logo{
         top: 70px;
         right: 100px !important;
     }
-
-    .clients-logo img {
-        display: none !important;
+    .clients-logo img{
     }
-
-    .navbar-nav {
-        font-size: 50px !important;
+    .nav-link{
+        font-size: 60px I !important;
     }
-
+  
 }
 
 #home-featured {
@@ -150,3 +140,4 @@ body {
     justify-content: center;
 
 }
+
