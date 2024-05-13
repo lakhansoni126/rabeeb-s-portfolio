@@ -4,10 +4,17 @@ body {
 .after_nav {
     display: none !important;
 }
+.CompanyLogo{
+    display: none !important;
+}
 
 @media screen and (max-width: 991px) {
     .after_nav {
         display: block !important;
+    }
+
+    .CompanyLogo {
+        display: none !important;
     }
 }
 

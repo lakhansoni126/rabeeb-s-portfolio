@@ -5,9 +5,13 @@ body {
     display: none !important;
 }
 
+
 @media screen and (max-width: 991px) {
     .after_nav {
         display: block !important;
+    }
+    #CompanyLogo{
+        display: none !important;
     }
 }
 @media screen and (max-width: 600px) {
